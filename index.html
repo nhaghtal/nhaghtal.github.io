@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<!-- Thanks to James Dolezal for designing this website -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Nika Haghtalab - Homepage</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="research-taxonomy-live.css?v=2">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,500" rel="stylesheet">
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="name">Nika Haghtalab</div>
+            <div class="subtitle">Associate Professor<br />
+                EECS Department, UC Berkeley.<br />
+		<i>Sloan Fellow</i> <br />
+            </div>
+            <image src="img/face.jpg" width="220px";/>
+        </div>
+        <div class="topbar">
+            <ul class="navigation_list">
+                <li>about</li>
+                <li>research</li>
+                <li>group</li>
+                <li>teaching</li>
+		<li>activities</li>
+                <li>contact</li>
+            </ul>
+        </div>
+        <div class="maintext target" id="about_place">
+	<p>I am an Associate Professor with tenure in the <a href="https://eecs.berkeley.edu/">Department of Electrical Engineering and Computer Sciences at UC Berkeley</a>.
+	I am a co-director of the <a href="https://climb.berkeley.edu/">Center for the Theoretical Foundations of Learning, Inference, Information, Intelligence, Mathematics and Microeconomics at Berkeley (CLIMB)</a> and a  member of the <a href="https://bair.berkeley.edu">Berkeley Artificial Intelligence Research (BAIR) Lab</a>  and the <a href="https://theory.cs.berkeley.edu">Theory Group </a> at UC Berkeley.</p>
+	
+	
+	<p>I work on a broad and versatile set of problems related to machine learning, algorithms, economics, and society. My work contributes to an emerging mathematical foundation for learning and decision-making systems in the presence of economic and societal forces. Important problem settings often addressed by my work include collaborative (and federated) learning, learning in markets and other economics settings, incentive-aware and robust learning, and foundations of machine learning generally. My work has been recognized by a <a href="https://sloan.org/fellowships/2024-Fellows">Sloan fellowship (2024)</a>, <a href="https://ai2050.schmidtsciences.org/fellow/nika-haghtalab/">Schmidt Sciences AI2050 award</a>, <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2145898&HistoricalAwards=false">NSF CAREER (2022)</a>, <a href="https://research.google/outreach/research-scholar-program/recipients/">Google Research scholar</a> award (2023), NeurIPS and ICAPS best paper awards, EC exemplary track paper awards, and several other industry awards and fellowships.
+</p>
+		
+	
+	<p>Previously, I was an assistant professor in the CS department of Cornell University, in 2019-2020.
+	 Prior to that, I was a postdoctoral researcher at Microsoft Research, New England, in 2018-2019.
+	I received my Ph.D. from the <a href="http://www.csd.cs.cmu.edu/">Computer Science Department</a> of Carnegie Mellon University,
+	 where I was fortunate to be co-advised by <a href="http://www.cs.cmu.edu/~avrim/">Avrim Blum</a> and <a href="http://www.cs.cmu.edu/~arielpro/">Ariel Procaccia.</a>
+	  My thesis titled <a href="pubs/nhaghtal_cs_2018.pdf">Foundation of Machine Learning, by the People, for the People</a> received the CMU School of Computer Science Dissertation Award (2018) and a SIGecom Dissertation Honorable Mention Award (2019).</p>
+	
+            <p>My CV can be found <a href="files/Nika_CV.pdf">here</a>.</p>
+
+
+            
+        </div>
+        <div class="maintext" id="research_place">
+            <div class="intro">
+                <p>I work on a broad range of core methodological questions in machine learning, with an emphasis on principled and often mathematical approaches. Much of this research contributes to an emerging foundation for machine learning and decision-making systems that explicitly accounts for the environments and contexts in which they operate. These include questions of robustness and reliability, distribution shift and transfer learning, human–AI interaction and learning from human or agentic behavior, principled approach to generative modeling, and the social and economic forces that shape these systems and their interactions. Our work has appeared in leading machine learning venues, including NeurIPS, ICML, and ICLR, as well as top theoretical computer science conferences such as COLT, EC, STOC, and FOCS. Below, you can explore specific research themes and view papers most closely related to each.</p>
+                <p class="helper-line">Browse by research area, then refine by subcategory to quickly find a specific line of work.</p>
+                <div class="publication-legend" aria-label="Publication badge legend">
+                    <span class="publication-legend-label">Legend:</span>
+                    <span class="publication-legend-item"><span class="paper-badge conference">C</span> conference</span>
+                    <span class="publication-legend-item"><span class="paper-badge journal">J</span> journal</span>
+                    <span class="publication-legend-item"><span class="paper-badge working">P</span> preprint</span>
+                    <span class="publication-legend-item"><span class="paper-badge thesis">T</span> thesis or report</span>
+                    <span class="publication-legend-item"><span class="paper-badge bookchapter">BC</span> book chapter</span>
+                    <span class="publication-legend-note">Numbers indicate the running index within each publication type.</span>
+                </div>
+            </div>
+
+            <div class="preview-shell">
+                <aside class="theme-rail">
+                    <div>
+                        <h2>Research Areas</h2>
+                    </div>
+                    <div id="theme_list"></div>
+                </aside>
+
+                <section class="results-pane">
+                    <div class="results-header">
+                        <h2 id="results_title"></h2>
+                        <p class="results-summary" id="results_summary"></p>
+                    </div>
+                    <div class="subcat-row" id="subcat_row"></div>
+                    <div class="paper-list" id="paper_list"></div>
+                </section>
+            </div>
+        </div>
+
+
+    <div class="maintext target" id="group_place">
+		<h2> Current Graduate Students</h2>
+		<ul>
+			<li><b><a href="https://nivasini.github.io/">Nivasini Ananthakrishnan</a>:</b> Ph.D. student (co-advised with Jordan).</li>
+			<li><b><a href="https://markbedaywi.ca/">Mark Bedaywi</a>:</b> Ph.D. student (co-advised with Russell).</li>
+			<li><b><a href="https://www.jessicad.ai/">Jessica Dai</a>:</b> Ph.D. student (co-advised with Recht).</li>
+			<li><b><a href="https://astro-eric.github.io/">Haozhe (Eric) Jiang</a>:</b> Ph.D. student (co-advised with Jiao).</li>
+			<li><b><a href="https://sites.google.com/berkeley.edu/blee">Brian Lee</a>:</b> Ph.D. student (co-advised with Jordan).</li>
+			<li><b><a href="https://kunheyang.com/">Kunhe Yang</a>:</b> Ph.D. student.</li>
+		</ul>
+		<h2> Past Graduate Students</h2>
+		<ul>
+			<li><b><a href="https://www.alexwei.org/">Alex Wei</a>:</b> Ph.D. 2023 (co-advised with Jordan and Steinhardt). Now Researcher at OpenAI.</li>
+			<li><b><a href="https://ashettyv.github.io/">Abhishek Shetty</a>:</b> Ph.D. 2024. Now Postdoc at MIT. Incoming Faculty at Georgia Tech CS</li>
+			<li><b><a href="https://eric-zhao.com/">Eric Zhao</a>:</b> Ph.D. 2025 (co-advised with Jordan). Now Researcher at OpenAI.</li>
+		</ul>
+
+		<h2> Past and Current Postdoctoral Researchers</h2>
+		<ul>
+			<li><b><a href="https://www.khoury.northeastern.edu/home/derakhshan/">Mahsa Derakhshan</a>:</b> FODSI Postdoc, now Assistant Professor at Northeastern University.</li>
+			<li><b><a href="https://www.charapodimata.com/">Chara Podimata</a>:</b> FODSI Postdoc, now Assistant Professor at MIT Sloan.</li>
+			<li><b><a href="https://yuvaldagan.wordpress.com/">Yuval Dagan</a>:</b> FODSI Postdoc, now senior Lecturer at Tel-Aviv University.</li>
+			<li><b><a href="https://paulgoelz.de/">Paul G&#246lz</a>:</b> FODSI-MSRI Postdoc, now Assitant Professor at Cornell ORIE.</li>
+			<li><b><a href="https://sites.google.com/site/acmonsterqiao/">Mingda Qiao</a>:</b> FODSI Postdoc. Incoming Assistant Professor UMass Amherst.</li>
+		</ul>
+		<h2> Undergraduate Students</h2>
+		<ul>
+			<li><b><a href="http://ndurvasula.com/">Naveen Durvasula</a>:</b> M.E.T student (double major in EECS and BA).</li>
+		</ul>
+		<h2> Past and Current Short-term visitors</h2>
+		<ul>
+			<li><b><a href="https://sites.google.com/andrew.cmu.edu/baileyflanigan/home">Bailey Flanigan</a>:</b> Ph.D. student at Carnegie Mellon University.</li>
+			<li><b><a href="https://paulgoelz.de/">Paul Goelz</a>:</b> Postdoctoral researcher at Harvard University.</li>
+			<li><b><a href="https://www.cs.cornell.edu/~richard/">Richard Phillips</a>:</b> Ph.D. student at Cornell University.</li>
+		</ul>
+
+
+
+	</div>
+
+
+        <div class="maintext target" id="activities_place">
+		
+		<h2>Tutorials</h2>
+		<ul>
+			<li><b>Learning and Incentives</b>, Simons Institute's Learning and Games Boot Camp. (<a href="files/Tutorial_learning_incentives_4hrs.pdf">Slides</a>, Videos <a href="https://youtu.be/vso1DDwJuHw">Part I</a>, <a href="https://youtu.be/iD5mqkv0aCU">Part II</a>, <a href="https://youtu.be/7KKVAp_u7nI">Part III</a>, and <a href="https://youtu.be/KacBlMWDQKU">Part IV</a>)</li>
+			<li>
+			<li><b>Multi-Distribution Learning, for Fairness, Robustness, and Collaboration</b>, Simons Institute's Data-Driven Processes Bootcamp. (<a href="files/multi-distribution-haghtalab.pdf">Slides</a> and <a href="https://www.youtube.com/watch?v=hL4iqLGsCmE">video</a>)</li>
+		</ul>
+
+		
+		<h2>Workshops</h2>
+		<ul>
+			<li><b>NeurIPS-19</b> Workshop on <a href="https://neurips.cc/virtual/2019/workshop/13158">Bridging Game Theory and Deep Learning</a>, December 2019.</li>
+			<li><b>EC-19</b> Workshop on <a href="https://sites.google.com/view/eclearning2019/">Learning in the Presence of Strategic Behavior</a>, June 2019.</li>
+			<li><b>Toyota Technological Institute</b> Workshop on <a href="mlstrat-ttic/">Learning in the Presence of Strategic Behavior</a>, August 2018</li>	
+			<li><b>NIPS-17</b> Workshop on <a href="mlstrat/">Learning in the Presence of Strategic Behavior</a>, December 2017.</li>
+			
+		</ul>
+		<h2>Selected Senior-level Service and Committee work</h2>
+		<ul>
+			<li><b>Program Committe co-Chair for <a href="http://algorithmiclearningtheory.org/alt2022/">ALT 2022</a></b>.</li>
+			<li><b>Steering Committe member, <a href="https://www.learningtheory.org/">Association for Computational Learning (ACL)</a></b>.</li>
+			<li><b>Director, <a href="http://algorithmiclearningtheory.org/alt-steering-committee/">Association for Algorthmic Learning Theory (AALT)</a></b></li>
+			<li><b>Co-Founder of <a href="https://let-all.com/index.html">Learning Theory Alliance</a></b>: A mentorship network with regular mentorship activities for the learning theory community. 2020 -- present .</li>
+			<!--<li><b>Top Level/Senior Program Committee Member:</b> STOC 2019, AISTATS 2019, ALT 2019, ALT2018.</li>
+			<li><b>Program Commmittee Member:</b> EC 2019, ICML 2017, AAAI 2017, ICML 2016.</li>
+			<li><b>Journal Refereeing:</b> TEAC, JAIR, ML.</li>
+			<li><b>Conference Refereeing:</b> EC, COLT, FOCS, ITCS, NIPS, SODA, STOC, TARK.</li> 
+			i--!>
+		</ul>
+		
+
+	</div>
+        <div class="maintext" id="teaching_place">
+            <div class="ed_list">
+                <ul>
+                    <li><table>
+			<tr>
+                            <th><div class="year">F25</div></th>
+                            <th>
+                                <div class="title">CS272: <a href="./courses/cs272/f25">Foundations of Learning, Decisions, and Games</a>.</div> 
+                            </th>
+                        </tr></br>
+			<tr>
+                            <th><div class="year">S25</div></th>
+                            <th>
+                                <div class="title">CS170: <a href="https://cs170.org/">Efficient Algorithms and Intractable Problems</a>, with John Wright.</div> 
+                            </th>
+                        </tr></br>
+			<tr>	
+                            <th><div class="year">F23</div></th>
+                            <th>
+                                <div class="title">CS170: <a href="http://cs170.org/">Efficient Algorithms and Intractable Problems</a>, with John Wright.</div> 
+                            </th>
+                        </tr></br>
+			<tr>
+                            <th><div class="year">S23</div></th>
+                            <th>
+                                <div class="title">CS294-182: Theoretical Foundations of Learning, Decisions, and Games. Co-taught with Michael Jordan.</div> 
+                            </th>
+                        </tr></br>
+			<tr>
+                            <th><div class="year">S22</div></th>
+                            <th>
+                                <div class="title">Data 102: <a href="https://data102.org/">Data, Inference, and Decisions</a>. Co-taught with Ramesh Sridharan.</div> 
+                            </th>
+			</tr>
+			<tr>
+                            <th><div class="year">F21</div></th>
+                            <th>
+                                <div class="title">CS294-182 (New Course!): <a href="https://bcourses.berkeley.edu/courses/1504940">Theoretical Foundations of Learning, Decisions, and Games</a>. Co-taught with Michael Jordan.</div> 
+                            </th>
+                        </tr></br>
+                        <tr>
+                            <th><div class="year">F20</div></th>
+                            <th>
+                                <div class="title">CS 4780-5780: <a href="http://www.cs.cornell.edu/courses/cs4780/2020fa/">Introduction to Machine Learning</a>. Co-taught with Thorsten Joachims.</div>
+                            </th>
+                        </tr></br>
+			<tr>
+			    <th><div class="year">S20</div></th>
+			    <th>
+                                <div class="title">CS 6781 (New Course!): <a href="http://www.cs.cornell.edu/courses/cs6781/2020sp/">Theoretical Foundations of Machine Learning</a>.</div> 
+                            </th>
+			</tr>
+			<tr>
+                            <th><div class="year">F19</div></th>
+                            <th>
+                                <div class="title">CS 4780-5780: <a href="http://www.cs.cornell.edu/courses/cs4780/2019fa/">Machine Learning for Intelligent Systems</a>. Co-taught with Thorsten Joachims.</div>                                
+                            </th>
+                        </tr>
+                    </table></li>
+<!--                     <li><table>
+                        <tr>
+                            <th><div class="year">2015</div></th>
+                            <th>
+                                <div class="title">Teaching assistant</div>
+                                <a href="https://cs.cmu.edu/~ninamf/courses/806/10-806-index.html">Foundations of Machine Learning and Data Science (10-806)</a>
+                            </th>
+                        </tr>
+                    </table></li>
+                    <li><table>
+                        <tr>
+                            <th><div class="year">2014</div></th>
+                            <th>
+                                <div class="title">Teaching assistant</div>
+                                <a href="https://cs.cmu.edu/~15381">Introduction to Artificial Intelligence (CS15-381)</a>
+                            </th>
+                        </tr>
+                    </table></li>
+                    <li><table>
+                        <tr>
+                            <th><div class="year">2013</div></th>
+                            <th>
+                                <div class="title">Teaching assistant</div>
+                                <a href="https://www.student.cs.uwaterloo.ca/~cs485/">Machine Learning: Statistical &amp; Computational Foundation (CS485/685)</a>
+                            </th>
+                        </tr>
+                    </table></li>
+                    <li class="blankyearlist"><table>
+                        <tr>
+                            <th><div class="year">2012</div></th>
+                            <th>
+                                <div class="title">Instructor</div>
+                                Machine Learning (MCS4114) at the <a href="http://bihe.org/">Baha'i Institute for Higher Education</a>
+                            </th>
+                        </tr>
+                    </table></li>
+                    <li class="blankyearlist"><table>
+                        <tr>
+                            <th><div class="blankyear"></div></th>
+                            <th>
+                                <div class="title">Instructional Assistant</div>
+                                <a href="http://www.student.cs.uwaterloo.ca/~cs240/W12/">Data Structures and Data Management (CS240)</a>
+                            </th>
+                        </tr>
+                    </table></li>
+                    <li><table>
+                        <tr>
+                            <th><div class="blankyear"></div></th>
+                            <th>
+                                <div class="title">Instructional Assistant</div>
+                                <a href="http://www.student.cs.uwaterloo.ca/~cs234/personnel.phtml">Data Types and Structures (CS234)</a>
+                            </th>
+                        </tr>
+                    </table></li>
+                    --!>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="maintext" id="contact_place">
+
+	<p><b>For prospective students:</b> Thank you for your interest in joing my group. Unfortunately, I am not able to respond to your emails about PhD admission. If you are interested in doing your PhD with me, please apply directly on the <a href="https://eecs.berkeley.edu/academics/graduate/research-programs/admissions">EECS department admission page</a>. Most years, my group welcomes new Ph.D. students.</p>
+       
+        
+            <div class="contact_list">
+                <ul>
+                    <li><img src="img/email.png" width="60px" /><h2>Email</h2><a href="mailto:nika@berkeley.edu">nika@berkeley.edu</a></li>
+                    <li><img src="img/location.png" width="60px" /><h2>Office</h2><a href="https://goo.gl/maps/SCLHUVpYqBm55N7N6">BWW 8028<br >UC Berkeley</a></li>
+                    <li><img src="img/linkedin.png" width="60px" /><h2>LinkedIn</h2><a href="https://linkedin.com/pub/nika-haghtalab/4b/113/a84">My Profile</a></li>
+                </ul>
+            </div>
+        </div>
+        <script>
+window.researchTaxonomyData = {
+    storageKey: "research-taxonomy-overrides-v1",
+    themes: [
+        {
+            id: "large-models",
+            name: "Principled Understanding of Large Models",
+            description: "Work on the behavior, adaptation, objectives, and limits of modern large models."
+        },
+        {
+            id: "trust",
+            name: "Trust and Robustness in ML",
+            description: "Robust learning guarantees, reliability under adaptivity or strategic response, and safety failures in modern systems."
+        },
+        {
+            id: "multi-agent",
+            name: "Multi-Agent Learning and Human Preferences",
+            description: "Strategic interaction, collaboration, human feedback, and learning in settings shaped by multiple agents."
+        },
+        {
+            id: "multi-distribution",
+            name: "Multi-Distribution, Multi-Objective, and Calibrated Learning",
+            description: "Multi-group, multi-distribution, calibration, and objective-aware learning guarantees."
+        },
+        {
+            id: "algorithms",
+            name: "Algorithms, Optimization, and Mechanism Design",
+            description: "Algorithmic and economic structure in auctions, markets, optimization, matching, clustering, and computation."
+        },
+        {
+            id: "society",
+            name: "Societal and Institutional Impacts of ML",
+            description: "How learning systems affect platforms, social welfare, incentives, institutions, and public-facing decision environments."
+        }
+    ],
+    subcategories: {
+        trust: [
+            { id: "trust-robust", name: "Robust online, supervised, and unsupervised learning" },
+            { id: "trust-safety", name: "Safety and jailbreaks of large models" },
+            { id: "trust-strategic", name: "Reliability under strategic response" }
+        ],
+        "multi-agent": [
+            { id: "agent-stackelberg", name: "Stackelberg and strategic learning" },
+            { id: "agent-feedback", name: "Learning from and aggregating human feedback" },
+            { id: "agent-collab", name: "Collaborative and distributed learning" },
+            { id: "agent-human-ai", name: "Human-AI interaction" }
+        ],
+        algorithms: [
+            { id: "alg-markets", name: "Auctions, matchings, and markets" },
+            { id: "alg-structured", name: "Structured optimization" }
+        ],
+        society: [
+            { id: "soc-platforms", name: "Platforms and information ecosystems" },
+            { id: "soc-institutions", name: "Social welfare, fairness, and institutions" }
+        ]
+    },
+    papers: [
+        { id: "regularity-based-coarsening", title: "Computationally Efficient Collaborative Communication Via Regularity-Based Coarsening", themes: ["multi-agent", "algorithms"], subcategories: ["agent-collab", "agent-human-ai"], notes: "" },
+        { id: "revisiting-gradient-equilibrium", title: "Blackwell Approachability and Gradient Equilibrium are Equivalent", themes: ["algorithms"], subcategories: ["alg-structured"], notes: "" },
+        { id: "distortion-ai-alignment-revisited", title: "Distortion of AI Alignment Revisited: RLHF is a Decent Utilitarian Aligner", themes: ["large-models", "multi-agent"], subcategories: ["agent-feedback"], notes: "" },
+        { id: "subliminal-effects", title: "Subliminal Effects in Your Data: A General Mechanism via Log-Linearity", themes: ["large-models", "trust"], subcategories: [], notes: "" },
+        { id: "pluralistic-leaderboards", title: "Pluralistic Leaderboards", themes: ["multi-agent"], subcategories: ["agent-feedback"], notes: "" },
+        { id: "three-years-rchatgpt", title: "Three Years of r/ChatGPT: Societal Impact Evaluations from Social Media Data", themes: ["multi-agent", "society"], subcategories: ["agent-human-ai", "soc-platforms"], notes: "" },
+        { id: "strategic-feature-selection", title: "Strategic Feature Selection", themes: ["trust"], subcategories: ["trust-strategic"], notes: "" },
+        { id: "diffusion-policy-optimization", title: "Diffusion Policy Optimization without Drifting Apart", themes: ["large-models"], subcategories: [], notes: "" },
+        { id: "surjectivity", title: "On Surjectivity of Neural Networks: Can you elicit any behavior from your model?", themes: ["large-models"], subcategories: [], notes: "" },
+        { id: "assistance-games", title: "Provably Optimal Learning Algorithms for Assistance Games", themes: ["multi-agent"], subcategories: ["agent-collab", "agent-human-ai"], notes: "" },
+        { id: "diffusion-language-models", title: "Diffusion Language Models are Provably Optimal Parallel Samplers", themes: ["large-models"], subcategories: [], notes: "" },
+        { id: "panprediction", title: "Panprediction: Optimal Predictions for Any Downstream Task and Loss", themes: ["multi-distribution"], subcategories: [], notes: "" },
+        { id: "rlhf-distortion", title: "Distortion of Learning from Human Feedback: Pluralistic Alignment through Implicit Utilitarian Voting", themes: ["large-models", "multi-agent"], subcategories: ["agent-feedback"], notes: "" },
+        { id: "style-to-facts", title: "From Style to Facts: Mapping the Boundaries of Knowledge Injection with Finetuning", themes: ["large-models"], subcategories: [], notes: "" },
+        { id: "sample-adaptivity", title: "Sample-Adaptivity Tradeoff in On-Demand Sampling", themes: ["multi-agent", "multi-distribution"], subcategories: ["agent-collab"], notes: "" },
+        { id: "multi-agent-risks", title: "Multi-agent risks from advanced AI", themes: ["large-models", "multi-agent", "society"], subcategories: ["agent-human-ai", "soc-institutions"], notes: "" },
+        { id: "leakage-robust-persuasion", title: "Leakage-Robust Bayesian Persuasion", themes: ["multi-agent", "algorithms"], subcategories: ["agent-stackelberg", "alg-markets"], notes: "" },
+        { id: "multi-group-guarantees", title: "Learning With Multi-Group Guarantees For Clusterable Subpopulations", themes: ["multi-distribution"], subcategories: [], notes: "" },
+        { id: "platforms-collaboration", title: "Platforms for Efficient and Incentive-Aware Collaboration", themes: ["multi-agent", "algorithms"], subcategories: ["agent-collab", "alg-markets"], notes: "" },
+        { id: "truthfulness-calibration", title: "Truthfulness of Calibration Measures", themes: ["trust", "multi-agent", "multi-distribution"], subcategories: ["trust-strategic", "agent-feedback"], notes: "" },
+        { id: "knowledge-power", title: "Is Knowledge Power? On the (Im)possibility of Learning from Strategic Interactions", themes: ["trust", "multi-agent"], subcategories: ["trust-strategic", "agent-stackelberg"], notes: "" },
+        { id: "covert-finetuning", title: "Covert Malicious Finetuning: Challenges in Safeguarding LLM Adaptation", themes: ["large-models", "trust"], subcategories: ["trust-safety"], notes: "" },
+        { id: "smoothed-adaptive-adversaries", title: "Smoothed Analysis with Adaptive Adversaries", themes: ["trust"], subcategories: ["trust-robust"], notes: "" },
+        { id: "delegating-data", title: "Delegating Data Collection in Decentralized Machine Learning", themes: ["multi-agent", "multi-distribution"], subcategories: ["agent-collab"], notes: "" },
+        { id: "probabilistic-feedback", title: "Can Probabilistic Feedback Drive User Impacts in Online Platforms?", themes: ["multi-agent", "society"], subcategories: ["agent-human-ai", "soc-platforms"], notes: "" },
+        { id: "smooth-nash", title: "Smooth Nash Equilibria: Algorithms and Complexity", themes: ["multi-agent", "algorithms"], subcategories: ["agent-stackelberg", "alg-structured"], notes: "" },
+        { id: "anecdotes", title: "Communicating with Anecdotes", themes: ["multi-agent", "society"], subcategories: ["agent-feedback", "soc-platforms"], notes: "" },
+        { id: "jailbroken", title: "Jailbroken: How Does LLM Safety Training Fail?", themes: ["large-models", "trust"], subcategories: ["trust-safety"], notes: "" },
+        { id: "calibrated-stackelberg", title: "Calibrated Stackelberg Games: Learning Optimal Commitments Against Calibrated Agents", themes: ["multi-agent", "multi-distribution"], subcategories: ["agent-stackelberg"], notes: "" },
+        { id: "smoothed-sequential", title: "Smoothed Analysis of Sequential Probability Assignment", themes: ["trust"], subcategories: ["trust-robust"], notes: "" },
+        { id: "multi-calibration", title: "A Unifying Perspective on Multi-Calibration: Game Dynamics for Multi-Objective Learning", themes: ["trust", "multi-distribution"], subcategories: ["trust-strategic"], notes: "" },
+        { id: "bayes-risk-welfare", title: "Improved Bayes Risk Can Yield Reduced Social Welfare Under Competition", themes: ["society"], subcategories: ["soc-institutions"], notes: "" },
+        { id: "open-problem-mdl", title: "Open Problem: The Sample Complexity of Multi-Distribution Learning for VC Classes", themes: ["multi-distribution"], subcategories: [], notes: "" },
+        { id: "smoothed-auctions", title: "Smoothed Analysis of Online Non-parametric Auctions", themes: ["trust", "algorithms"], subcategories: ["trust-robust", "alg-markets"], notes: "" },
+        { id: "leveraging-reviews", title: "Leveraging Reviews: Learning to Price with Buyer and Seller Uncertainty", themes: ["multi-agent", "algorithms"], subcategories: ["agent-feedback", "alg-markets"], notes: "" },
+        { id: "stochastic-vertex-cover", title: "Stochastic Minimum Vertex Cover in General Graphs: a 3/2-Approximation", themes: ["algorithms"], subcategories: ["alg-structured"], notes: "" },
+        { id: "competition-alignment", title: "Competition, Alignment, and Equilibria in Digital Marketplaces", themes: ["multi-agent", "society"], subcategories: ["agent-human-ai", "soc-platforms"], notes: "" },
+        { id: "oracle-efficient-online", title: "Oracle-Efficient Online Learning for Beyond Worst-Case Adversaries", themes: ["trust"], subcategories: ["trust-robust"], notes: "" },
+        { id: "on-demand-sampling", title: "On-Demand Sampling: Learning Optimally from Multiple Distributions", themes: ["multi-distribution"], subcategories: [], notes: "" },
+        { id: "nonmyopic-stackelberg", title: "Learning in Stackelberg Games with Non-myopic Agents", themes: ["multi-agent"], subcategories: ["agent-stackelberg"], notes: "" },
+        { id: "polarization", title: "Polarization Through the Lens of Learning Theory", themes: ["society"], subcategories: ["soc-platforms"], notes: "" },
+        { id: "federated-collaboration", title: "One for One, or All for All: Equilibria and Optimality of Collaboration in Federated Learning", themes: ["multi-agent", "multi-distribution"], subcategories: ["agent-collab"], notes: "" },
+        { id: "noise-classification", title: "Noise in Classification", themes: ["trust"], subcategories: ["trust-robust"], notes: "" },
+        { id: "smoothed-private-learning", title: "Smoothed Analysis of Online and Differentially Private Learning", themes: ["trust"], subcategories: ["trust-robust"], notes: "" },
+        { id: "auction-design", title: "Oracle-Efficient Learning and Auction Design", themes: ["algorithms"], subcategories: ["alg-markets"], notes: "" },
+        { id: "structured-submodular", title: "Structured Robust Submodular Maximization: Offline and Online Algorithms", themes: ["algorithms"], subcategories: ["alg-structured"], notes: "" },
+        { id: "welfare-mechanisms", title: "Maximizing Welfare with Incentive-Aware Evaluation Mechanisms", themes: ["multi-agent", "algorithms", "society"], subcategories: ["agent-feedback", "alg-markets", "soc-institutions"], notes: "" },
+        { id: "kcenter-journal", title: "k-center Clustering under Perturbation Resilience", themes: ["algorithms"], subcategories: ["alg-structured"], notes: "" },
+        { id: "stochastic-matching", title: "Ignorance is Almost Bliss: Near-Optimal Stochastic Matching With Few Queries", themes: ["algorithms"], subcategories: ["alg-markets"], notes: "" },
+        { id: "disparate-equilibria", title: "The Disparate Equilibria of Algorithmic Decision Making when Individuals Invest Rationally.", themes: ["multi-agent", "society"], subcategories: ["agent-human-ai", "soc-institutions"], notes: "" },
+        { id: "loss-functions", title: "Toward a Characterization of Loss Functions for Distribution Learning", themes: ["multi-distribution"], subcategories: [], notes: "" },
+        { id: "computing-stackelberg", title: "Computing Stackelberg Equilibria of Large General-Sum Games", themes: ["multi-agent", "algorithms"], subcategories: ["agent-stackelberg", "alg-structured"], notes: "" },
+        { id: "robust-submodular", title: "Robust Submodular Maximization: Offline and Online Algorithms", themes: ["algorithms"], subcategories: ["alg-structured"], notes: "" },
+        { id: "greenlining", title: "Algorithmic Greenlining: An Approach to Increase Diversity", themes: ["society"], subcategories: ["soc-institutions"], notes: "" },
+        { id: "thesis", title: "Foundation of Machine Learning, by the People, for the People", themes: ["multi-agent", "society"], subcategories: ["agent-collab", "soc-institutions"], notes: "" },
+        { id: "laziness-motion", title: "The Provable Virtue of Laziness in Motion Planning", themes: ["algorithms"], subcategories: ["alg-structured"], notes: "" },
+        { id: "weighted-voting", title: "Weighted Voting Via No-Regret Learning", themes: ["multi-agent"], subcategories: ["agent-feedback"], notes: "" },
+        { id: "topic-modeling", title: "Generalized Topic Modeling", themes: ["algorithms"], subcategories: ["alg-structured"], notes: "" },
+        { id: "hint", title: "Online Learning with a Hint.", themes: ["trust"], subcategories: ["trust-robust"], notes: "" },
+        { id: "collaborative-pac", title: "Collaborative PAC Learning.", themes: ["multi-agent", "multi-distribution"], subcategories: ["agent-collab"], notes: "" },
+        { id: "crowd-pac", title: "Efficient PAC Learning from the Crowd", themes: ["multi-agent"], subcategories: ["agent-collab"], notes: "" },
+        { id: "opting-matchings", title: "Opting Into Optimal Matchings", themes: ["algorithms"], subcategories: ["alg-markets"], notes: "" },
+        { id: "play-stackelberg", title: "Learning to Play Stackelberg Security Games", themes: ["multi-agent"], subcategories: ["agent-stackelberg"], notes: "" },
+        { id: "stealthy-diffusion", title: "Monitoring Stealthy Diffusion", themes: ["algorithms"], subcategories: ["alg-structured"], notes: "" },
+        { id: "compressed-sensing", title: "Learning and 1-bit Compressed Sensing under Asymmetric Noise", themes: ["trust"], subcategories: ["trust-robust"], notes: "" },
+        { id: "three-strategies", title: "Three Strategies to Success: Learning Adversary Models in Security Games", themes: ["multi-agent"], subcategories: ["agent-stackelberg"], notes: "" },
+        { id: "bounded-noise", title: "Efficient Learning of Linear Separators under Bounded Noise", themes: ["trust"], subcategories: ["trust-robust"], notes: "" },
+        { id: "commitment-no-regrets", title: "Commitment Without Regrets: Online Learning in Stackelberg Security Games", themes: ["multi-agent"], subcategories: ["agent-stackelberg"], notes: "" },
+        { id: "optimal-commitment", title: "Learning Optimal Commitment to Overcome Insecurity", themes: ["multi-agent"], subcategories: ["agent-stackelberg"], notes: "" },
+        { id: "clustering-background-noise", title: "Clustering in the Presence of Background Noise", themes: ["algorithms"], subcategories: ["alg-structured"], notes: "" },
+        { id: "lazy-defenders", title: "Lazy Defenders Are Almost Optimal Against Diligent Attackers", themes: ["multi-agent"], subcategories: ["agent-stackelberg"], notes: "" },
+        { id: "clustering-noise", title: "Clustering in the Presence of Noise", themes: ["algorithms"], subcategories: ["alg-structured"], notes: "" }
+    ]
+};
+
+        </script>
+        <script>
+window.researchTaxonomySourceHtml = "\n<h1>Preprints</h1>\n<div class=\"research_list\">\n    <ul>\n\n      <li><table>\n\n            <tr>\n                <th class=\"tagcell\">\n                    <div class=\"tag working\">P1</div>\n                </th>\n                <th class=\"content\">\n                    <span class=\"title\">Strategic Feature Selection</span> <br />\n                   By Jivat Neet Kaur, Pratik Patil, Divya Shanmugam, <a href=\"https://people.eecs.berkeley.edu/~emmapierson/\">Emma Pierson</a>, <a href=\"https://people.eecs.berkeley.edu/~jordan/\">Michael I. Jordan</a>, Nika Haghtalab, <a href=\"https://mjagadeesan.github.io/\">Meena Jagadeesan</a>, Ahmed Alaa, and <a href=\"https://serenalwang.com/\">Serena Wang</a>.</br >\n                    Working paper, 2026. <br />\n                    [ <a href=\"https://arxiv.org/abs/2606.18867\">arXiv</a> ].<br />\n                </th>\n            </tr>\n            <tr>\n                <th class=\"tagcell\">\n                    <div class=\"tag working\">P2</div>\n                </th>\n                <th class=\"content\">\n                    <span class=\"title\">Diffusion Policy Optimization without Drifting Apart</span> <br />\n                   By <a href=\"https://astro-eric.github.io/\">Haozhe Jiang</a>, <a href=\"https://havenfeng.github.io/\">Haiwen Feng</a>, <a href=\"https://people.eecs.berkeley.edu/~pabbeel/\">Pieter Abbeel</a>, <a href=\"https://people.eecs.berkeley.edu/~jiantao/\">Jiantao Jiao</a>, <a href=\"https://people.eecs.berkeley.edu/~kanazawa/\">Angjoo Kanazawa</a>, and Nika Haghtalab.</br >\n                    Working paper, 2026. <br />\n                    [ <a href=\"https://arxiv.org/abs/2606.13795\">arXiv</a> ].<br />\n                </th>\n            </tr>\n            <tr>\n                <th class=\"tagcell\">\n                    <div class=\"tag working\">P3</div>\n                </th>\n                <th class=\"content\">\n                    <span class=\"title\">On Surjectivity of Neural Networks: Can you elicit any behavior from your model?</span> <br />\n                   By <a href=\"https://astro-eric.github.io/\">Haozhe Jiang</a>, and Nika Haghtalab.</br >\n                    Working paper, last update: May 2025. <br />\n                </th>\n            </tr>\n            <tr>\n                <th class=\"tagcell\">\n                    <div class=\"tag working\">P4</div>\n                </th>\n                <th class=\"content\">\n                    <span class=\"title\">Provably Optimal Learning Algorithms for Assistance Games</span> <br />\n                   By <a href=\"https://nivasini.github.io/\">Nivasini Ananthakrishnan</a>, <a href=\"https://markbedaywi.ca/\">Mark Bedaywi</a>, <a href=\"https://people.eecs.berkeley.edu/~jordan/\">Michael I. Jordan</a>, <a href=\"https://people.eecs.berkeley.edu/~russell/\">Stuart Russell</a>, and Nika Haghtalab.</br >\n                    Working paper, 2026. <br />\n                    [ <a href=\"https://arxiv.org/abs/2607.08012\">arXiv</a> ].<br />\n                </th>\n            </tr>\n        </table></li>\n     </ul>\n</div>\n<h1>Publications</h1>\n            <div class=\"research_list\">\n                <ul>\n\t\n                  <li><table>\n\t\t\t<tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C61</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Computationally Efficient Collaborative Communication Via Regularity-Based Coarsening</span> <br />\n                               By <a href=\"https://markbedaywi.ca/\">Mark Bedaywi</a>, Scott Emmons, Nika Haghtalab, and <a href=\"https://people.eecs.berkeley.edu/~russell/\">Stuart Russell</a>.</br >\n                                FOCS 2026: Proc. 67th Annual Symposium on Foundations of Computer Science, 2026. forthcoming<br />\n                                [ <a href=\"https://arxiv.org/abs/2608.05327\">paper</a> ].<br />\n                            </th>\n                        </tr>\n\n\t\t\t<tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C60</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Blackwell Approachability and Gradient Equilibrium are Equivalent</span> <br />\n                               By <a href=\"https://sites.google.com/berkeley.edu/blee\">Brian W. Lee</a>, Nika Haghtalab, <a href=\"https://people.eecs.berkeley.edu/~jordan/\">Michael I. Jordan</a>, and <a href=\"https://www.stat.berkeley.edu/~ryantibs/\">Ryan J. Tibshirani</a>.</br >\n\t\t\t\tCOLT 2026: Proc. Conference on Learning Theory, 2026. forthcoming<br />\n                                [ <a href=\"https://arxiv.org/abs/2606.27315\">arXiv</a> ].<br />\n                            </th>\n                        </tr>\n\n\t\t\t<tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C59</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Distortion of AI Alignment Revisited: RLHF is a Decent Utilitarian Aligner</span> <br />\n                               By <a href=\"https://scholar.google.com/citations?user=jeOPodEAAAAJ&hl=ja\">Kazusato Oko</a>, <a href=\"https://aulichney.github.io/\">Annie S Ulichney</a>, Nika Haghtalab, and <a href=\"https://hermite.jp/\">Han Bao</a>.</br >\n\t\t\t\tICML 2026: Proc. International Conference on Machine Learning, 2026. forthcoming<br />\n                            </th>\n                        </tr>\n\t\t\t<tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C58</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Subliminal Effects in Your Data: A General Mechanism via Log-Linearity</span> <br />\n                               By <a href=\"https://ishaqadenali.github.io/\">Ishaq Aden-Ali</a>, <a href=\"https://noahgol.github.io/\">Noah Golowich</a>, <a href=\"https://aliu42.github.io/\">Allen Liu</a>, <a href=\"https://ashettyv.github.io/\">Abhishek Shetty</a>, <a href=\"https://people.csail.mit.edu/moitra/\">Ankur Moitra</a>, and Nika Haghtalab.</br >\n\t\t\t\tICML 2026: Proc. International Conference on Machine Learning, 2026. forthcoming<br />\n                                [ <a href=\"https://arxiv.org/abs/2602.04863\">arXiv</a> ].<br />\n                            </th>\n                        </tr>\n\t\t\t<tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C57</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Pluralistic Leaderboards</span> <br />\n                               By Nika Haghtalab, <a href=\"http://www.cs.cmu.edu/~arielpro/\">Ariel D. Procaccia</a>, <a href=\"https://www.cs.umd.edu/~hanshao/\">Han Shao</a>, <a href=\"https://serenalwang.com/\">Serena Lutong Wang</a>, and <a href=\"https://kunheyang.com/\">Kunhe Yang</a>.</br >\n\t\t\t\tICML 2026: Proc. International Conference on Machine Learning, 2026. forthcoming<br />\n                                [ <a href=\"https://arxiv.org/abs/2606.02547\">arXiv</a> ].<br />\n                            </th>\n                        </tr>\n\t\t\t<tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C56</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Three Years of r/ChatGPT: Societal Impact Evaluations from Social Media Data</span> <br />\n                               By <a href=\"https://www.jessicad.ai/\">Jessica Dai</a>, <a href=\"https://www.linkedin.com/in/seandgarcia/\">Sean Garcia</a>, <a href=\"https://people.eecs.berkeley.edu/~emmapierson/\">Emma Pierson</a>, <a href=\"https://people.eecs.berkeley.edu/~brecht/\">Benjamin Recht</a>, and Nika Haghtalab.</br >\n\t\t\t\tICML 2026: Proc. International Conference on Machine Learning, 2026. forthcoming<br />\n                                [ <a href=\"https://arxiv.org/abs/2606.05750\">arXiv</a> ].<br />\n                            </th>\n                        </tr>\n\n\n\t\t\t<tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C55</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Diffusion Language Models are Provably Optimal Parallel Samplers</span> <br />\n                               By <a href=\"https://astro-eric.github.io/\">Haozhe Jiang</a>, Nika Haghtalab, and <a href=\"https://chen-lijie.github.io/\">Lijie Chen</a>.</br >\n\t\t\t\tICLR 2026: International Conference on Learning Representations <br />\n                                [<a href=\"https://arxiv.org/abs/2512.25014\">arXiv version</a>]\n\t\t\t    </th>\n\t\t\t</tr>\n\t\t\t<tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C54</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Panprediction: Optimal Predictions for Any Downstream Task and Loss</span> <br />\n                               By <a href=\"https://www.stat.cmu.edu/~siva/\">Sivaram Balakrishnan</a>, Nika Haghtalab, <a href=\"https://www.cs.columbia.edu/~djhsu/\">Daniel Hsu</a>, <a href=\"https://sites.google.com/berkeley.edu/blee\">Brian W Lee</a>, and <a href=\"https://eric-zhao.com/\">Eric Zhao</a>.</br >\n\t\t\t\tAISTATS 2026: Conference on Artificial Intelligence and Statistics <br />\n                                [<a href=\"https://arxiv.org/pdf/2510.27638\">arXiv version</a>]\n        \t\t\t    <font color=\"#e6233d\">Selected for AISTATS oral presentation</font>. <br />\n\t\t\t    </th>\n                        </tr>\n\t\t\t<tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C53</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Distortion of Learning from Human Feedback: Pluralistic Alignment through Implicit Utilitarian Voting</span> <br />\n                               By <a href=\"https://paulgoelz.de/\">Paul Golz</a>, Nika Haghtalab, and <a href=\"https://kunheyang.com/\">Kunhe Yang</a>.</br >\n\t\t\t\tNeurIPS 2025: Proc. 38th Annual Conference on Neural Information Processing Systems, 2025. <br />\n\t\t\t\t[ <a href=\"https://arxiv.org/abs/2505.23749\">arXiv version</a> ].<br />\n                            </th>\n                        </tr>\n\t\t\t<tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C52</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">From Style to Facts: Mapping the Boundaries of Knowledge Injection with Finetuning</span> <br />\n                               By <a href=\"https://eric-zhao.com/\">Eric Zhao</a>, <a href=\"https://scholar.google.com/citations?user=MDfW21AAAAAJ&hl=en\">Pranjal Awasthi</a>, and Nika Haghtalab.</br >\n\t\t\t\tNeurIPS 2025: Proc. 38th Annual Conference on Neural Information Processing Systems, 2025.<br />\n\t\t\t\t[<a href=\"https://arxiv.org/abs/2503.05919\">arXiv version</a>].<br />\n                            </th>\n                        </tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C51</div>\n                            </th>\n\t\t\t    <th class = \"content\">\n                                <span class=\"title\">Sample-Adaptivity Tradeoff in On-Demand Sampling</span> <br />\n                               By Nika Haghtalab, <a href=\"https://omaralmontasser.github.io/\">Omar Montasser</a>, and <a href=\"https://sites.google.com/site/acmonsterqiao/\">Mingda Qiao</a>.</br >\n\t\t\t\t NeurIPS 2025: Proc. 38th Annual Conference on Neural Information Processing Systems, 2025.<br />\n\t\t\t\t[<a href=\"https://openreview.net/forum?id=gaHjGx1cMh\">conference version</a>].<br />\n \t\t\t\t\t<font color=\"#e6233d\">Selected for NeurIPS spotlight presentation</font>. <br />\n                            </th>\n\t\t\t</tr>\n                        \n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag thesis\">T3</div>\n                            </th>\n\t\t\t    <th class = \"content\">\n                                <span class=\"title\">Multi-agent risks from advanced AI</span> <br />\n                               By Lewis Hammond et al. (long author list).</br >\n\t\t\t\tTechnical Report, Cooperative AI Foundation, February 2025<br />\n                                [ <a href=\"https://arxiv.org/pdf/2502.14143\">arXiv</a> ].<br />\n                            </th>\n\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C50</div>\n                            </th>\n\t\t\t    <th class = \"content\">\n                                <span class=\"title\">Leakage-Robust Bayesian Persuasion</span> <br />\n                               By Nika Haghtalab, <a href=\"https://sites.google.com/site/acmonsterqiao/\">Mingda Qiao</a>, and <a href=\"https://kunheyang.com/\">Kunhe Yang</a>.</br >\n\n\t\t\t\tEC 2025: Proc. ACM Conference on Economics and Computation. forthcoming<br />\n                                [ <a href=\"https://arxiv.org/abs/2410.14588\">arXiv</a> ].<br />\n                            </th>\n\n\t\t\t\n\t\t\t</tr>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C49</div>\n                            </th>\n\t\t\t    <th class = \"content\">\n                                <span class=\"title\">Learning With Multi-Group Guarantees For Clusterable Subpopulations</span> <br />\n                               By <a href=\"https://www.jessicad.ai/\">Jessica Dai</a>, Nika Haghtalab, and <a href=\"https://eric-zhao.com/\">Eric Zhao</a>.</br >\n\t\t\t\tICML 2025: Proc. International Conference on Machine Learning. forthcoming<br />\n                                [ <a href=\"https://arxiv.org/abs/2410.14588\">arXiv</a> ].<br />\n                            </th>\n\t\t\t</tr>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C48</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Platforms for Efficient and Incentive-Aware Collaboration</span> <br />\n                               By Nika Haghtalab, <a href=\"https://sites.google.com/site/acmonsterqiao/\">Mingda Qiao</a>, and <a href=\"https://kunheyang.com/\">Kunhe Yang</a>.</br >\n\t\t\t\tSODA 2025: Proc. Symposium on Discrete Algorithms, 2025. <br />\n\t\t\t\t[ <a href=\"https://arxiv.org/pdf/2402.15169.pdf\">arXiv</a> ].<br />\n                        </tr>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C47</div>\n                            </th>\n\t\t\t    <th class = \"content\">\n                                <span class=\"title\">Truthfulness of Calibration Measures</span> <br />\n                               By Nika Haghtalab, <a href=\"https://sites.google.com/site/acmonsterqiao/\">Mingda Qiao</a>, <a href=\"https://kunheyang.com/\">Kunhe Yang</a>, and <a href=\"https://eric-zhao.com/\">Eric Zhao</a>.</br >\n                                NeurIPS 2024: Proc. 37th Annual Conference on Neural Information Processing Systems, 2024.<br />\n\t\t\t\t[<a href=\"https://arxiv.org/abs/2407.13979\">arXiv</a>]\n                            </th>\n\t\t\t</tr>\n                        <tr>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C46</div>\n                            </th>\n\t\t\t    <th class = \"content\">\n                                <span class=\"title\">Is Knowledge Power? On the (Im)possibility of Learning from Strategic Interactions</span> <br />\n                               By <a href=\"https://nivasini.github.io/\">Nivasini Ananthakrishnan</a>, Nika Haghtalab, <a href=\"https://www.charapodimata.com/\">Chara Podimata</a>, <a href=\"https://kunheyang.com/\">Kunhe Yang</a>.</br >\n                                NeurIPS 2024: Proc. 37th Annual Conference on Neural Information Processing Systems, 2024.<br />\n\t\t\t\t[<a href=\"https://arxiv.org/abs/2408.08272\">arXiv</a>]\n                            </th>\n\t\t\t</tr>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C45</div>\n                            </th>\n\t\t\t    <th class = \"content\">\n                                <span class=\"title\">Covert Malicious Finetuning: Challenges in Safeguarding LLM Adaptation</span> <br />\n                               By Danny Halawi, <a href=\"https://www.alexwei.org/\">Alex Wei</a>, <a href=\"https://www.ericswallace.com/\">Eric Wallace</a>, <a href=\"https://tonytwang.net/\">Tony Wang</a>, Nika Haghtalab, and <a href=\"https://jsteinhardt.stat.berkeley.edu/\">Jacob Steinhardt</a>.</br >\n                                ICML 2024: Proc. International Conference in Machine Learning, 2024.<br />\n                                [<a href=\"https://arxiv.org/abs/2406.20053\">arXiv</a>, <a href=\"https://icml.cc/virtual/2024/poster/34921\">conference version</a>]\n                            </th>\n\t\t\t</tr>\n                        <tr>\n\t\t\t    <th class=\"tagcell\">\n                                <div class=\"tag journal\">J7</div>\n                            </th>\n\t\t\t    <th class = \"content\">\n                                <span class=\"title\">Smoothed Analysis with Adaptive Adversaries</span> <br />\n                               By Nika Haghtalab, <a href=\"http://timroughgarden.org/\">Tim Roughgarden</a>, <a href=\"https://ashettyv.github.io/\">Abhishek Shetty</a>.</br >\n                                Journal of the ACM. <font size=\"-2\">Supercedes the FOCS 2021 paper below.</font> <br />\n                                [<a href=\"https://dl.acm.org/doi/10.1145/3656638\">JACM paper</a>, <a href=\"pubs/smoothed_online_ACM.pdf\">journal version</a>]\n                            </th>\n\t\t\t</tr>\n\t\t\t<tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C44</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Delegating Data Collection in Decentralized Machine Learning</span> <br />\n                               By <a href=\"https://nivasini.github.io/\">Nivasini Ananthakrishnan</a>, <a href=\"https://stephenbates19.github.io/\">Stephen Bates</a>, <a href=\"https://people.eecs.berkeley.edu/~jordan/\">Michael I. Jordan</a>, and Nika Haghtalab.</br >\n\t\t\t\tAISTATS 2024: Proc. International Conference on Artificial Intelligence and Statistics, 2024. <br />\n\t\t\t\t[ <a href=\"https://arxiv.org/abs/2309.01837\">arXiv</a> ]\n                            </th>\n                        </tr>\n\t\t\t<tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C43</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Can Probabilistic Feedback Drive User Impacts in Online Platforms?</span> <br />\n                               By  <a href=\"https://www.jessicad.ai/\">Jessica Dai</a>, <a href=\"https://sites.google.com/andrew.cmu.edu/baileyflanigan/home\">Bailey Flanigan</a>, Nika Haghtalab, <a href=\"https://mjagadeesan.github.io/\">Meena Jagadeesan</a>, <a href=\"https://www.charapodimata.com/\">Chara Podimata</a>.</br >\n\t\t\t\tAISTATS 2024: Proc. International Conference on Artificial Intelligence and Statistics, 2024. <br />\n\t\t\t\t[ <a href=\"https://arxiv.org/abs/2401.05304\">arXiv</a> ]\n                            </th>\n                        </tr>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C42</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Smooth Nash Equilibria: Algorithms and Complexity</span> <br />\n                               By <a href=\"http://people.csail.mit.edu/costis/\">Constantinos Daskalakis</a>, <a href=\"https://noahgol.github.io/\">Noah Golowich</a>, Nika Haghtalab, and <a href=\"https://ashettyv.github.io/\">Abhishek Shetty</a>.</br>  \n\t\t\t\tITCS 2024: Proc. Innovations in Theoretical Computer Science, 2024.<br />\n\t\t\t\t[ <a href=\"https://arxiv.org/abs/2309.12226\">arXiv</a> ]\n                            </th>\n                        </tr>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C41</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\"> Communicating with Anecdotes</span> <br />\n                               By Nika Haghtalab,  <a href=\"http://www.immorlica.com/\">Nicole Immorlica</a>, <a href=\"https:///www.microsoft.com/en-us/research/people/brlucier/\">Brendan Lucier</a>, and <a href=\"https://www.markusmobius.org/\">Markus Mobius</a>, <a href=\"https://www.cs.princeton.edu/~dm23/\">Divyarthi Mohan</a>.</br >\n\t\t\t\tITCS 2024: Proc. Innovations in Theoretical Computer Science, 2024.  <br />\n\t\t\t\t[ <a href=\"https://arxiv.org/abs/2205.13461\">arXiv</a>, <a href=\"pubs/anecdotes-30min.pdf\">slides</a> ]\n                            </th>\n                        </tr>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C40</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Jailbroken: How Does LLM Safety Training Fail?</span> <br />\n                               By <a href=\"https://www.alexwei.org/\">Alex Wei</a>, Nika Haghtalab, and <a href=\"https://jsteinhardt.stat.berkeley.edu/\">Jacob Steinhardt</a>.</br >\n\t\t\t\t   NeurIPS 2023: Proc. 36th Annual Conference on Neural Information Processing Systems, 2023. <br />\n\t\t\t\t   [ <a href=\"https://arxiv.org/abs/2307.02483\">arXiv</a> ] <br />\n        \t\t\t    <font color=\"#e6233d\">Selected for NeurIPS oral presentation</font>. <br />\n\t                    </th>\n\t\t\t</tr>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C39</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Calibrated Stackelberg Games: Learning Optimal Commitments Against Calibrated Agents</span> <br />\n                               By Nika Haghtalab, <a href=\"https://www.charapodimata.com/\">Chara Podimata</a>, <a href=\"https://kunheyang.com/\">Kunhe Yang</a>.</br >\n\t\t\t\t   NeurIPS 2023: Proc. 36th Annual Conference on Neural Information Processing Systems, 2023. <br />\n\t\t\t\t   [ <a href=\"https://arxiv.org/abs/2306.02704\">arXiv</a> ] <br />\n\t\t\t\t <font color=\"#e6233d\">Selected for NeurIPS spotlight presentation</font>. <br />\n                            </th>\n\t\t\t</tr>\n\t\t\t<tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C38</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Smoothed Analysis of Sequential Probability\nAssignment</span> <br />\n                               By <a href=\"https://alankritabhatt.github.io/\">Alankrita Bhatt</a>, Nika Haghtalab, <a href=\"https://ashettyv.github.io/\">Abhishek Shetty</a>.</br >\n\t\t\t\t   NeurIPS 2023: Proc. 36th Annual Conference on Neural Information Processing Systems, 2023. <br />\n\t\t\t\t   [ <a href=\"https://arxiv.org/abs/2303.04845\">arXiv</a> ] <br />\n\t\t\t\t <font color=\"#e6233d\">Selected for NeurIPS spotlight presentation</font>. <br />\n                            </th>\n\t\t\t</tr>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C37</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">A Unifying Perspective on Multi-Calibration: Game Dynamics for Multi-Objective Learning</span> <br />\n                               By Nika Haghtalab, <a href=\"https://people.eecs.berkeley.edu/~jordan/\">Michael I. Jordan</a>, and <a href=\"https://eric-zhao.com/\">Eric Zhao</a>.</br >\n \t\t\t\tNeurIPS\t2023: Proc. 36th Annual Conference on Neural Information Processing Systems, 2023. <br />\n\t\t\t\t[ <a href=\"https://arxiv.org/pdf/2302.10863.pdf\">arXiv</a> ]\n                            </th>\n                        <tr>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C36</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Improved Bayes Risk Can Yield Reduced Social Welfare Under Competition</span> <br />\n                               By <a href=\"https://mjagadeesan.github.io/\">Meena Jagadeesan</a>, <a href=\"https://people.eecs.berkeley.edu/~jordan/\">Michael I. Jordan</a>, <a href=\"https://jsteinhardt.stat.berkeley.edu/\">Jacob Steinhardt</a>, and Nika Haghtalab.</br >\n \t\t\t\tNeurIPS\t2023: Proc. 36th Annual Conference on Neural Information Processing Systems, 2023. <br />\n                                [ <a href=\"https://arxiv.org/abs/2306.14670\">arXiv</a> ]\n\t\t\t    </th>\n                        <tr>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C35</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Open Problem: The Sample Complexity of Multi-Distribution Learning for VC Classes</span> <br />\n                               By Pranjal Awasthi, Nika Haghtalab, and <a href=\"https://eric-zhao.com/\">Eric Zhao</a>.</br >\n\t\t\t\tCOLT 2023: Proc.  36th Annual Conference on Learning Theory, 2023. <br />\n\t\t\t\t[ <a href=\"https://arxiv.org/abs/2307.12135\">arXiv</a> ]\n                            </th>\n                        <tr>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C34</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Smoothed Analysis of Online Non-parametric Auctions</span> <br />\n                               By <a href=\"https://ndurvasula.com/\">Naveen Durvasula</a>, Nika Haghtalab, and <a href=\"https://mzampet.com/\">Manolis Zampetakis</a>.</br >\n\t\t\t\tEC 2023: Proc. 24th ACM Conference on Economics and Computation, 2023. <br />\n                            </th>\n                        </tr>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C33</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Leveraging Reviews: Learning to Price with Buyer and Seller Uncertainty</span> <br />\n                               By <a href=\"http://people.eecs.berkeley.edu/~wguo/\">Wenshuo Guo</a>, Nika Haghtalab, <a href=\"https://pages.cs.wisc.edu/~kandasamy/\">Kirthevasan Kandasamy</a>, and <a href=\"https://vitercik.github.io/\">Ellen Vitercik</a>.</br >\n\t\t\t\tEC 2023: Proc. 24th ACM Conference on Economics and Computation, 2023. <br />\n\t\t\t\t[ <a href=\"https://arxiv.org/abs/2302.09700\">arXiv</a> ]<br />\n \t\t\t\t<font color=\"#e6233d\"><b>Exemplary Paper Award, AI Track, EC 2023</b></font>. <br />\n                            </th>\n                        </tr>\n\t\t\t<tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C32</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Stochastic Minimum Vertex Cover in General Graphs: a 3/2-Approximation</span> <br />\n                               By <a href=\"http://www.cs.umd.edu/~mahsa/\">Mahsa Derakhshan</a>, <a href=\"http://ndurvasula.com/\">Naveen Durvasula</a>, and Nika Haghtalab.</br >\n\t\t\t\tSTOC 2023: Proc. 55th Annual ACM Symposium on Theory of Computing, 2023 <br />\n\t\t\t\t[ <a href=\"pubs/stochasticVC.pdf\">submitted version</a> ]\n                            </th>\n                        </tr>\n\t\t\t<tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C31</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Competition, Alignment, and Equilibria in Digital Marketplaces</span> <br />\n                               By  <a href=\"https://mjagadeesan.github.io/\">Meena Jagadeesan</a>, <a href=\"https://people.eecs.berkeley.edu/~jordan/\">Michael I. Jordan</a>, and Nika Haghtalab.</br >\n\t\t\t\tAAAI 2023: Proc. 37th AAAI Conference on Artificial Intelligence, 2023 </br>\n\t\t\t\t[<a href=\"https://arxiv.org/abs/2208.14423\">arXiv</a>] <br />\n                            </th>\n                        </tr>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C30</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Oracle-Efficient Online Learning for Beyond Worst-Case Adversaries</span> <br />\n                               By Nika Haghtalab, <a href=\"https://yanjunhan2021.github.io/index.html\">Yanjun Han</a>, <a href=\"https://ashettyv.github.io/\">Abhishek Shetty</a>, and <a href=\"https://kunheyang.com\">Kunhe Yang</a>.</br >\n\t\t\t\tNeurIPS 2022: Proc. 35th Annual Conference on Neural Information Processing Systems, 2022. <br />\n\t\t\t\t[ <a href=\"https://arxiv.org/abs/2202.08549\">arXiv</a> ] <br />\n\t\t\t\t<font color=\"#e6233d\">Selected for NeurIPS oral presentation</font>. <br />\n                            </th>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C29</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">On-Demand Sampling: Learning Optimally from Multiple Distributions</span> <br />\n                               By Nika Haghtalab, <a href=\"https://people.eecs.berkeley.edu/~jordan/\">Michael I. Jordan</a>, and <a href=\"https://eric-zhao.com/\">Eric Zhao</a>.</br >\n\t\t\t\tNeurIPS 2022: Proc. 35th Annual Conference on Neural Information Processing Systems, 2022. </br>\n\t\t\t [ <a href=\"pubs/ondemand.pdf\">submitted version</a>, <a href=\"https://arxiv.org/abs/2210.12529\">arXiv</a> ] <br />\n\t\t\t\t<font color=\"#e6233d\">Selected for NeurIPS oral presentation</font>. <br />\n\t\t\t\t<font color=\"#e6233d\"><b>Outstanding paper award at NeurIPS 2022</b></font>. <br />\n\t\t\t\t<font color=\"#e6233d\">Selected for Symposium on the Foundations of Responsible Computing (FORC 2023) non-archival track</font>. <br />\n                            </th>\n                        </tr>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C28</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Learning in Stackelberg Games with Non-myopic Agents</span> <br />\n                               By Nika Haghtalab, <a href=\"https://mitmgmtfaculty.mit.edu/tlykouris/\">Thodoris Lykouris</a>, <a href=\"https://www.cs.cornell.edu/~nietert/\">Sloan Nietert</a>, <a href=\"https://www.alexwei.org/\">Alex Wei</a>.</br >\n                                EC 2022: Proc. 23nd ACM Conference on Economics and Computation, 2022<br />\n\t\t\t\t[ <a href=\"http://arxiv.org/abs/2208.09407\">arXiv:2208.094076</a>, <a href=\"https://dl.acm.org/doi/pdf/10.1145/3490486.3538308\">EC version</a>]<br />\n                            </th>\n                        </tr>\n                  <li><table>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C27</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Smoothed Analysis with Adaptive Adversaries</span> <br />\n                               By Nika Haghtalab, <a href=\"http://timroughgarden.org/\">Tim Roughgarden</a>, <a href=\"https://ashettyv.github.io/\">Abhishek Shetty</a>.</br >\n                                FOCS 2021: Proc. 62nd Annual Symposium on Foundations of Computer Science, 2021.<br />\n\t\t\t\t[ <a href=\"https://arxiv.org/abs/2102.08446\">arXiv:2102:08446</a>]<br />\n                            </th>\n                        </tr>\n                  </table></li>\n                  <li><table>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag journal\">J6</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Polarization Through the Lens of Learning Theory</span> <br />\n                               By Nika Haghtalab, <a href=\"https://web.stanford.edu/~jacksonm/\">Matthew O. Jackson</a>, <a href=\"http://procaccia.info/\">Ariel D. Procaccia</a>.</br >\n\t\t\t\tPNAS: Proceedings of the National Academy of Sciences, 2021. <br />\n                                [ <a href=\"https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3606003\">SSRN version</a>, <a href=\"https://www.pnas.org/content/118/19/e2010144118\">PNAS version</a>]\n                            </th>\n                        </tr>\n                  </table></li>\n                  <li><table>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C26</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">One for One, or All for All: Equilibria  and Optimality of Collaboration in Federated Learning</span> <br />\n                               By <a href=\"https://ttic.uchicago.edu/~avrim/\">Avrim Blum</a>, Nika Haghtalab, <a href=\"https://www.cs.cornell.edu/~richard/\">Richard Lanas Phillips</a>, and <a href=\"https://sites.google.com/view/hanshao\">Han Shao</a>.</br >\n\t\t\t\tICML 2021: Proc 38th International Conference on Machine Learning, 2021.<br />\n                                [<a href=\"http://proceedings.mlr.press/v139/blum21a/blum21a.pdf\">ICML paper</a>, <a href=\"https://arxiv.org/abs/2103.03228\">arXiv:2103.03228</a>]\n                            </th>\n                        </tr>\n                  </table></li>\n\t\t   <li><table>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag bookchapter\">BC2</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Noise in Classification</span> <br />\n                                By <a href=\"http://www.cs.cmu.edu/~ninamf/\">Maria-Florina Balcan</a> and Nika Haghtalab. <br />\n                                In Tim Roughgarden, editors, Beyond the Worst-Case Analysis of Algorithms, chapter 16, Cambridge\nUniversity Press, Cambridge, United Kingdom, 2020.<br />\n                                [ <a href=\"https://arxiv.org/pdf/2010.05080.pdf\">chapter (arXiv)</a>, <a href=\"https://www.cambridge.org/core/books/beyond-the-worstcase-analysis-of-algorithms/8A8128BBF7FC2857471E9CA52E69AC21\">the full book</a> ]\n                            </th>\n                        </tr>\n                    </table></li>\n                  <li><table>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C25</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Smoothed Analysis of Online and Differentially Private Learning</span> <br />\n                               By Nika Haghtalab, <a href=\"http://timroughgarden.org/\">Tim Roughgarden</a>, <a href=\"https://ashettyv.github.io/\">Abhishek Shetty</a>.</br >\n\t\t\t\tNeurIPS 2020: Proc 33rd Annual Conference on Neural Information Processing Systems, 2020. <br />\n                                [<a href=\"https://proceedings.neurips.cc/paper/2020/hash/685bfde03eb646c27ed565881917c71c-Abstract.html\">NeurIPS paper</a>, <a href=\"https://arxiv.org/abs/2006.10129\">arXiv:2006.10129</a> ] <br />\n\t\t\t\t<font color=\"#e6233d\">Selected for NeurIPS spotlight presentation</font>. <br />\n                            </th>\n                        </tr>\n                  </table></li>\n                  <li><table>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag journal\">J5</div>\n                            </th>\n\t\t\t    <th class = \"content\">\n                                <span class=\"title\">Oracle-Efficient Learning and Auction Design</span> <br />\n                                By <a href=\"https://www.microsoft.com/en-us/research/people/mdudik/\">Miroslav DudÃ­k</a>, Nika Haghtalab, <a href=\"http://www-bcf.usc.edu/~haipengl/\">Haipeng Luo</a>, <a href=\"http://rob.schapire.net/\">Robert E. Schapire</a>, <a href=\"http://research.microsoft.com/en-us/um/people/vasy/\">Vasilis Syrgkanis</a>, and <a href=\"http://www.jennwv.com/\">Jennifer Wortman Vaughan</a>. <br />\n                                Journal of the ACM. <font size=\"-2\">Supercedes the FOCS 2017 paper below.</font> <br />\n                                [<a href=\"https://dl.acm.org/doi/10.1145/3402203\">JACM paper</a>, <a href=\"pubs/main-oracle-efficient.pdf\">journal version</a>]\n                            </th>\n                            <th class=\"content\">\n\t\t\t</th>\n                      </tr>\n                  </table></li>\n                  <li><table>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag journal\">J4</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Structured Robust Submodular Maximization: Offline and Online Algorithms</span> <br />\n                            \tBy <a href=\"https://nimaanari.com/\">Nima Anari</a>, Nika Haghtalab, <a href=\"http://www.cs.technion.ac.il/~naor/\">Joseph (Seffi) Naor</a>, <a href=\"http://www.pokutta.com/\">Sebastian Pokutta</a>, <a href=\"https://www2.isye.gatech.edu/~msingh94/\">Mohit Singh</a>, <a href=\"https://www.isye.gatech.edu/users/alfredo-ignacio-torrico-palacios\">Alfredo Torrico</a>.</br >\n\t\t\tINFORMS Journal on Computing. <font size=\"-2\">Supercedes the AISTATS 2019 paper below.</font><br />\n\t\t\t[<a href=\"https://pubsonline.informs.org/doi/abs/10.1287/ijoc.2020.0998\">IJOC paper</a>, <a href=\"https://arxiv.org/abs/1710.04740\">arXiv version</a>]\n\t\t\t</th>\n                      </tr>\n                  </table></li>\n                  <li><table>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C24</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Maximizing Welfare with Incentive-Aware Evaluation Mechanisms</span> <br />\n                               By Nika Haghtalab, <a href=\"http://www.immorlica.com/\">Nicole Immorlica</a>, <a href=\"https:///www.microsoft.com/en-us/research/people/brlucier/\">Brendan Lucier</a>, and Jack Wang</br >\n\t\t\t\tIJCAI 2020: Proc. 29th International Joint Conference on Artificial Intelligence, 2020.<br />\n                                [ <a href=\"https://arxiv.org/abs/2011.01956\"> arXiv:2011.01956</a>, <a href=\"https://www.ijcai.org/Proceedings/2020/0023.pdf\">IJCAI Version</a>, <a href=\"pubs/welfare-15min.pdf\">slides</a> ]\n                            </th>\n                      </tr>\n                  </table></li>\n\t\t    <li><table>\n                            <tr>\n                                <th class=\"tagcell\">\n                                    <div class=\"tag journal\">J3</div>\n                                </th>\n                                <th class=\"content\">\n                                    <span class=\"title\">k-center Clustering under Perturbation Resilience</span> <br />\n                                    By <a href=\"http://www.cs.cmu.edu/~ninamf/\">Maria-Florina Balcan</a>, Nika Haghtalab, and <a href=\"https://crwhite.ml/\">Colin White</a>.<br />\n                                    Transactions on Algorithms. <font size=\"-2\">Supercedes the ICALP-16 paper below.</font><br />\n\t\t\t\t    [<a href=\"https://dl.acm.org/doi/10.1145/3381424\">TALG paper</a>]\t\n\t\t\t\t</th>\n                            </tr>\n                </table></li>\n\t  \t\n\n\t\t    <li><table>\n                            <tr>\n                                <th class=\"tagcell\">\n                                    <div class=\"tag journal\">J2</div>\n                                </th>\n                                <th class=\"content\">\n                                    <span class=\"title\">Ignorance is Almost Bliss: Near-Optimal Stochastic Matching With Few Queries</span> <br />\n                                    By <a href=\"http://www.cs.cmu.edu/~avrim/\">Avrim Blum</a>, <a href=\"http://jpdickerson.com/\">John P. Dickerson</a>, Nika Haghtalab, <a href=\"http://procaccia.info/\">Ariel D. Procaccia</a>, <a href=\"http://www.cs.cmu.edu/~sandholm\">Tuomas Sandholm</a>, and <a href=\"https://sites.google.com/site/ankitsharmahomepage/\">Ankit Sharma</a>. <br />\n                                    Operations Research, 2020. <font size=\"-2\">Supercedes the EC-15 paper below.</font><br />                              \n\t\t\t\t[ <a href=\"https://pubsonline.informs.org/doi/10.1287/opre.2019.1856\">OR paper</a>]\n\t\t\t\t</th>\n                            </tr>\n                        </table>\n                    </li>\n                    <li>\n                        <table>\n                            <tr>\n\t\t<li><table>\n\t\t\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C23</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">The Disparate Equilibria of Algorithmic Decision Making when Individuals Invest Rationally.</span> <br />\n                               By <a href=\"https://lydiatliu.github.io/\">Lydia T. Liu</a>, <a href=\"https://www.microsoft.com/en-us/research/people/aswilson/\">Ashia Wilson</a>, Nika Haghtalab, <a href=\"https://www.microsoft.com/en-us/research/people/adum/\">Adam Tauman Kalai</a>, <a href=\"http://christianborgs.com/\">Christian Borgs</a>, and <a href=\"https://www.microsoft.com/en-us/research/people/jchayes/\">Jennifer Chayes</a>.</br >\n\t\t\t\tFAT* 2020: Proc. 3rd Annual ACM FAT* Conference, 2020. <br />\n                                [ <a href=\"https://dl.acm.org/doi/abs/10.1145/3351095.3372861\">FAT* paper</a>, <a href=\"http://arxiv.org/abs/1910.04123\">arXiv:1910.04123</a> ] \n                            </th>\n                        </tr>\n                  \t</table></li>\n                \t<li><table>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C22</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Toward a Characterization of Loss Functions for Distribution Learning</span> <br />\n                               By Nika Haghtalab, <a href=\"https://people.cs.umass.edu/~cmusco/\">Cameron Musco</a>, <a href=\"https://www.bowaggoner.com/\">Bo Waggoner</a>.</br >\n\t\t\t\tNeurIPS 2019: Proc. 32nd Annual Conference on Neural Information Processing Systems, 2019. <br />\n                                [ <a href=\"https://papers.nips.cc/paper/2019/hash/679d8bbd776e0bbf3b044306c5be94ae-Abstract.html\">NeurIPS paper</a>,<a href=\"https://arxiv.org/abs/1906.02652\">arXiv:1906.02652</a> ]\n                            </th>\n                        </tr>\n                  </table></li>\n                  <li><table>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C21</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Computing Stackelberg Equilibria of Large General-Sum Games</span> <br />\n      By <a href=\"http://www.cs.cmu.edu/~avrim/\">Avrim Blum</a>, Nika Haghtalab, <a href=\"http://www.cs.umd.edu/~hajiagha/\">MohammadTaghi HajiAghayi</a>, <a href=\"https://sites.google.com/view/saeedrezaseddighin/home\">Saeed Seddighin</a>.<br />\n\t\t\t\tSAGT 19: Proc. of the 12th International Symposium on Algorithmic Game Theory, October 2019. <br />\n                                [ <a href=\"https://link.springer.com/chapter/10.1007/978-3-030-30473-7_12\">SAGT ppaer</a>, <a href=\"pubs/sagt2019.pdf\">conference version</a> ]\n                            </th>\n                        </tr>\n                  </table></li>\n\n                  <li><table>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C20</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Robust Submodular Maximization: Offline and Online Algorithms</span> <br />\n                               By <a href=\"https://nimaanari.com/\">Nima Anari</a>, Nika Haghtalab, <a href=\"http://www.cs.technion.ac.il/~naor/\">Joseph (Seffi) Naor</a>, <a href=\"http://www.pokutta.com/\">Sebastian Pokutta</a>, <a href=\"https://www2.isye.gatech.edu/~msingh94/\">Mohit Singh</a>, <a href=\"https://www.isye.gatech.edu/users/alfredo-ignacio-torrico-palacios\">Alfredo Torrico</a>.</br >\n\t\t\t\tAISTATS 19: Proc. 22nd International Conference on Artificial Intelligence and Statistics, April 2018. <br />\n                                [ <a href=\"http://proceedings.mlr.press/v89/anari19a.html\">AISTATS paper</a>, <a href=\"pubs/aistats19.pdf\">conference version</a> ]\n                            </th>\n                        </tr>\n                  </table></li>\n\n                  <li><table>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C19</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Algorithmic Greenlining: An Approach to Increase Diversity</span> <br />\n                                By <a href=\"http://www.microsoft.com/en-us/research/people/borgs\">Christian Borgs</a>, \n       <a href=\"http://www.microsoft.com/en-us/research/people/jchayes\">Jennifer Chayes</a>, Nika Haghtalab, <a href=\"http://www.microsoft.com/en-us/research/people/adum\">Adam Tauman Kalai</a>, <a href=\"http://www.cs.cmu.edu/~eviterci\">Ellen Vitercik</a>.<br />\n                                AIES 19: Proc. 2nd ACM Conference on AI, Ethics, and Society, January 2018. <br />\n\t\t\t\t[ <a href=\"https://dl.acm.org/doi/10.1145/3306618.3314246\">AIES paper</a>, <a href=\"pubs/greenline.pdf\">submitted version</a>]\t\n                            </th>\n                        </tr>\n                  </table></li>\n                  <li>\n                      <table>\n                          <tr>\n                              <th class=\"tagcell\">\n                                  <div class=\"tag thesis\">T2</div>\n                              </th>\n                              <th class=\"content\">\n                                  <span class=\"title\">Foundation of Machine Learning, by the People, for the People</span> <br />\n                                  By Nika Haghtalab. <br />\n                                  Ph.D. Thesis, Carnegie Mellon University.\n                                  [ <a href=\"pubs/nhaghtal_cs_2018.pdf\">thesis</a> ]<br />\n                                  <font color=\"#e6233d\"><b>The winner of CMU School of Computer Science Dissertation Award</b></font>. <br />\n                              </th>\n                          </tr>\n                      </table>\n                  </li>\n                  <li><table>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C18</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">The Provable Virtue of Laziness in Motion Planning</span> <br />\n                                By Nika Haghtalab, Simon Mackenzie, <a href=\"https://www.cs.cmu.edu/~arielpro/\">Ariel D. Procaccia</a>, <a href=\"https://www.ri.cmu.edu/ri-people/oren-salzman/\">Oren Salzman</a>, <a href=\"https://homes.cs.washington.edu/~siddh/\">Siddhartha S. Srinivasa</a>.<br />\n                                ICAPS 18: Proc. 28th International Conference on Automated Planning and Scheduling, June 2018. <br />\n                                [ <a href=\"https://ojs.aaai.org/index.php/ICAPS/article/view/13879\">ICAPS paper</a>, <a href=\"https://arxiv.org/abs/1710.04101\">arXiv:1710.04101</a> ]<br />\n\n                                  <font color=\"#e6233d\"><b>Best paper award at ICAPS 2018</b></font>. <br />\n                            </th>\n                        </tr>\n                  </table></li>\n                  <li><table>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C17</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Weighted Voting Via No-Regret Learning</span> <br />\n                                By Nika Haghtalab, <a href=\"http://www.cs.cmu.edu/~rnoothig/\">Ritesh Noothigattu</a>, <a href=\"http://www.cs.cmu.edu/~arielpro\">Ariel D. Procaccia</a>.<br />\n                                AAAI 2018: Proc. 32nd AAAI Conference on Artificial Intelligence, February 2018.<br />\n                                [ <a href=\"https://ojs.aaai.org/index.php/AAAI/article/view/11466\">AAAI paper</a>, <a href=\"https://arxiv.org/abs/1703.04756\">arXiv:1703.04756</a> ]\n                            </th>\n                        </tr>\n                    </table></li>\n                  <li><table>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C16</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Generalized Topic Modeling</span> <br />\n                                By <a href=\"http://www.cs.cmu.edu/~avrim/\">Avrim Blum</a> and Nika Haghtalab. <br />\n                                AAAI 2018: Proc. 32nd AAAI Conference on Artificial Intelligence, February 2018.<br />\n                                [ <a href=\"https://ojs.aaai.org/index.php/AAAI/article/view/11825\">AAAI paper</a>, <a href=\"https://arxiv.org/abs/1611.01259\">arXiv:1611.01259</a> ]\n                            </th>\n                        </tr>\n                    </table></li>\n\t\t<li><table>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C15</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Online Learning with a Hint.</span> <br />\n                                By <a href=\"https://www.microsoft.com/en-us/research/people/oferd/\">Ofer Dekel</a>, <a href=\"http://www.mit.edu/~flajolet/\">Authur Flajolet</a>, Nika Haghtalab, <a href=\"http://web.mit.edu/jaillet/www/\">Patrick Jaillet</a>.<br />\n                                NIPS 2017: Proc. 30th Annual Conference on Neural Information Processing Systems, 2017. <br />\n                                [ <a href=\"https://papers.nips.cc/paper/2017/hash/22b1f2e0983160db6f7bb9f62f4dbb39-Abstract.html\">NeurIPS paper</a>, <a href=\"pubs/Hints.pdf\">submitted version</a> ]\n                            </th>\n                        </tr>\n                  </table></li>\n                <li><table>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C14</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Collaborative PAC Learning.</span> <br />\n                                By <a href=\"http://www.cs.cmu.edu/~avrim/\">Avrim Blum</a>, Nika Haghtalab, <a href=\"https://www.cs.cmu.edu/~arielpro/\">Ariel D. Procaccia</a>, and <a href=\"https://sites.google.com/site/acmonsterqiao/\">Mingda Qiao</a>.<br />\n                                NIPS 2017: Proc. 30th Annual Conference on Neural Information Processing Systems, 2017. <br />\n                                [ <a href=\"https://papers.nips.cc/paper/2017/hash/186a157b2992e7daed3677ce8e9fe40f-Abstract.html\">NeurIPS paper</a>, <a href=\"pubs/co-learn-nips.pdf\">submitted version</a> ]\n                            </th>\n                        </tr>\n                  </table></li>\n\t\t   <li><table>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C13</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Oracle-Efficient Learning and Auction Design</span> <br />\n                                By <a href=\"https://www.microsoft.com/en-us/research/people/mdudik/\">Miroslav DudÃ­k</a>, Nika Haghtalab, <a href=\"http://www-bcf.usc.edu/~haipengl/\">Haipeng Luo</a>, <a href=\"http://rob.schapire.net/\">Robert E. Schapire</a>, <a href=\"http://research.microsoft.com/en-us/um/people/vasy/\">Vasilis Syrgkanis</a>, and <a href=\"http://www.jennwv.com/\">Jennifer Wortman Vaughan</a>. <br />\n                                FOCS 2017: Proc. 58th Annual Symposium on Foundations of Computer Science, 2017. <br />\n                                [ <a href=\"https://ieeexplore.ieee.org/document/8104087\">FOCS paper</a>, <a href=\"pubs/oracle-cam.pdf\">conference version</a>, <a href=\"https://arxiv.org/abs/1611.01688\">arXiv:1611.01688</a> ]\n                            </th>\n                        </tr>\n\t\t  </table></li>\n\t\t  <li><table>\t\n\t\t\t<tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag conference\">C12</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Efficient PAC Learning from the Crowd</span> <br />\n                                By <a href=\"http://www.cs.princeton.edu/~pawashti/\">Pranjal Awasthi</a>, <a href=\"http://www.cs.cmu.edu/~avrim/\">Avrim Blum</a>, Nika Haghtalab, and <a href=\"https://www.tau.ac.il/~mansour/\">Yishay Mansour</a>.<br />\n                                COLT 2017: Proc. 30th Annual Conference on Learning Theory, 2017. <br />\n                                [ <a href=\"http://proceedings.mlr.press/v65/awasthi17a.html\">COLT paper</a>, <a href=\"pubs/crowd.pdf\">paper</a> ]\n                            </th>\n                        </tr>\n\t\t   </table></li>\n\t\t   <li>\n                        <table>\n                            <tr>\n                                <th class=\"tagcell\">\n                                    <div class=\"tag conference\">C11</div>\n                                </th>\n                                <th class=\"content\">\n                                    <span class=\"title\">Opting Into Optimal Matchings</span> <br />\n                                    By <a href=\"http://www.cs.cmu.edu/~avrim/\">Avrim Blum</a>, <a href=\"https://www.ceid.upatras.gr/webpages/faculty/caragian/%22\">Ioannis Caragiannis</a>, Nika Haghtalab, <a href=\"http://www.cs.cmu.edu/~arielpro/\">Ariel D. Procaccia</a>, <a href=\"https://sites.google.com/site/ebprocaccia/\">Eviatar B. Procaccia</a>, and Rohit Vaish. <br />\n                                    SODA 2017: Proc. 28th annual ACM-SIAM Symposium on Discrete Algorithms, 2017 <br />\n                                    [ <a href=\"https://dl.acm.org/doi/10.5555/3039686.3039841\">SODA paper</a>, <a href=\"pubs/optopt.pdf\">paper</a> ]\n                                </th>\n                            </tr>\n                        </table>\n                    </li>\n                   \n\t\t   <li><table>\n                        <tr>\n                            <th class=\"tagcell\">\n                                <div class=\"tag bookchapter\">BC1</div>\n                            </th>\n                            <th class=\"content\">\n                                <span class=\"title\">Learning to Play Stackelberg Security Games</span> <br />\n                                By <a href=\"http://www.cs.cmu.edu/~avrim/\">Avrim Blum</a>, Nika Haghtalab, <a href=\"https://www.cs.cmu.edu/~arielpro/\">Ariel D. Procaccia</a>. <br />\n                                Improving Homeland Security Decisions (Abbas, Tambe, and von Winterfeldt, eds.).<br />\n                                [ <a href=\"pubs/learnchapter.pdf\">chapter</a> ]\n                            </th>\n                        </tr>\n                    </table></li>\n\t\t    <li>\n                        <table>\n                            <tr>\n                                <th class=\"tagcell\">\n                                    <div class=\"tag journal\">J1</div>\n                                </th>\n                                <th class=\"content\">\n                                    <span class=\"title\">Monitoring Stealthy Diffusion.</span> <br />\n\t\t\t\t    By Nika Haghtalab, <a href=\"http://aronlaszka.com/\">Aron Laszka</a>, <a href=\"http://www.cs.cmu.edu/~arielpro/\">Ariel D. Procaccia</a>, <a href=\"http://vorobeychik.com/\">Yevgeniy Vorobeychik</a>, and <a href=\"http://www.vuse.vanderbilt.edu/~koutsoxd/\">Xenofon D. Koutsoukos</a>. <br />\n                                    Knowledge and Information Systems. <font size=\"-2\">Supercedes the ICDM-15 paper below.</font><br />\n<font color=\"#e6233d\">Special issue on selected papers from ICDM-15</font>. <br />\n                                    [ <a href=\"https://link.springer.com/article/10.1007/s10115-017-1023-7\">KAIS paper</a>, <a href=\"pubs/stealth.kais.pdf\">paper</a> ]                                \n\n\t\t\t\t</th>\n                            </tr>\n                        </table>\n                    </li>\n                    <li>\n                        <table>\n                            <tr>\n                                <th class=\"tagcell\">\n                                    <div class=\"tag conference\">C10</div>\n                                </th>\n                                <th class=\"content\">\n                                    <span class=\"title\">Learning and 1-bit Compressed Sensing under Asymmetric Noise</span> <br />\n                                    By <a href=\"http://www.cs.princeton.edu/~pawashti/\">Pranjal Awasthi</a>, <a href=\"http://www.cs.cmu.edu/~ninamf/\">Maria-Florina Balcan</a>, Nika Haghtalab, Hongyang Zhang. <br />\n                                    COLT 2016: Proc. 29th Annual Conference on Learning Theory, 2016. <br />\n                                    [ <a href=\"http://proceedings.mlr.press/v49/awasthi16.html\">COLT paper</a>, <a href=\"pubs/COLT16noise.pdf\">paper</a>, <a href=\"https://www.youtube.com/watch?v=I8-zrG27UsU&list=PLCHBdlWR7RYxyz4k3OlafPd9G68v7zDWB&index=33\">video</a> ]\n                                </th>\n                            </tr>\n                        </table>\n                    </li>\n                    <li>\n                        <table>\n                            <tr>\n                                <th class=\"tagcell\">\n                                    <div class=\"tag conference\">C9</div>\n                                </th>\n                                <th class=\"content\">\n                                    <span class=\"title\">k-Center Clustering Under Perturbation Resilience</span> <br />\n                                    By <a href=\"http://www.cs.cmu.edu/~ninamf/\">Maria-Florina Balcan</a>, Nika Haghtalab, <a href=\"http://www.cs.cmu.edu/~crwhite/\">Colin White</a>. <br />\n                                    ICALP 2016: Proc. International Colloquium on Automata, Languages, and Programming, 2016. <br />\n                                    [ <a href=\"https://drops.dagstuhl.de/opus/frontdoor.php?source_opus=6216\">ICALP paper</a>, <a href=\"http://arxiv.org/pdf/1505.03924.pdf\">arXiv:1505.03924</a> ]\n                                </th>\n                            </tr>\n                        </table>\n                    </li>\n                    <li>\n                        <table>\n                            <tr>\n                                <th class=\"tagcell\">\n                                    <div class=\"tag conference\">C8</div>\n                                </th>\n                                <th class=\"content\">\n                                    <span class=\"title\">Three Strategies to Success: Learning Adversary Models in Security Games</span> <br />\n                                    By Nika Haghtalab, <a href=\"http://teamcore.usc.edu/people/feifang/\">Fei Fang</a>, <a href=\"http://teamcore.usc.edu/people/thanhhng/\">Thanh H. Nguyen</a>, <a href=\"http://teamcore.usc.edu/people/arunesh/\">Arunesh Sinha</a>, <a href=\"http://www.cs.cmu.edu/~arielpro/\">Ariel D. Procaccia</a>, and <a href=\"http://teamcore.usc.edu/tambe/\">Milind Tambe</a>. <br />\n                                    IJCAI-16: Proc. 25th International Joint Conference on Artificial Intelligence, 2016.  <br />\n                                    [ <a href=\"https://dl.acm.org/doi/10.5555/3060621.3060665\">IJCAI paper</a>, <a href=\"pubs/ijcai16-full.pdf\">paper</a> ]\n                                </th>\n                            </tr>\n                        </table>\n                    </li>\n                    <li>\n                        <table>\n                            <tr>\n                                <th class=\"tagcell\">\n                                    <div class=\"tag conference\">C7</div>\n                                </th>\n                                <th class=\"content\">\n                                    <span class=\"title\">Monitoring Stealthy Diffusion</span> <br />\n                                    By Nika Haghtalab, <a href=\"http://aronlaszka.com/\">Aron Laszka</a>, <a href=\"http://www.cs.cmu.edu/~arielpro/\">Ariel D. Procaccia</a>, <a href=\"http://vorobeychik.com/\">Yevgeniy Vorobeychik</a>, and <a href=\"http://www.vuse.vanderbilt.edu/~koutsoxd/\">Xenofon D. Koutsoukos</a>. <br />\n                                    ICDM 2015: Proc. 15th IEEE International Conference on Data Mining, 2015. <br />\n                                    [ <a href=\"pubs/stealth.pdf\">paper</a> ]\n                                </th>\n                            </tr>\n                        </table>\n                    </li>\n                    <li>\n                        <table>\n                            <tr>\n                                <th class=\"tagcell\">\n                                    <div class=\"tag conference\">C6</div>\n                                </th>\n                                <th class=\"content\">\n                                    <span class=\"title\">Efficient Learning of Linear Separators under Bounded Noise</span> <br />\n                                    By <a href=\"http://www.cs.princeton.edu/~pawashti/\">Pranjal Awasthi</a>, <a href=\"http://www.cs.cmu.edu/~ninamf/\">Maria-Florina Balcan</a>, Nika Haghtalab, <a href=\"http://www.cs.cmu.edu/~rurner/\">Ruth Urner</a>. <br />\n                                    COLT 2015: Proc. 28th Annual Conference on Learning Theory, 2015.  <br />\n                                    [ <a href=\"pubs/Awasthi15b.pdf\">colt paper</a>, <a href=\"pubs/massart.pdf\">full paper</a>, <a href=\"http://arxiv.org/abs/1503.03594\">arXiv:1503.03594</a>, ]\n                                </th>\n                            </tr>\n                        </table>\n                    </li>\n                    <li>\n                        <table>\n                            <tr>\n                                <th class=\"tagcell\">\n                                    <div class=\"tag conference\">C5</div>\n                                </th>\n                                <th class=\"content\">\n                                    <span class=\"title\">Commitment Without Regrets: Online Learning in Stackelberg Security Games</span> <br />\n                                    By <a href=\"http://www.cs.cmu.edu/~ninamf/\">Maria-Florina Balcan</a>, <a href=\"http://www.cs.cmu.edu/~avrim/\">Avrim Blum</a>, Nika Haghtalab, <a href=\"http://www.cs.cmu.edu/~arielpro/\">Ariel D. Procaccia</a>.<br />\n                                    EC 2015: Proc. 15th ACM Conference on Economics and Computation, 2015. <br />\n                                    [ <a href=\"pubs/security_multi_attacker.pdf\">paper</a>, <a href=\"pubs/EC2015_multi.ppsx\">presentation</a> ]\n                                </th>\n                            </tr>\n                        </table>\n                    </li>\n                    <li>\n                        <table>\n                            <tr>\n                                <th class=\"tagcell\">\n                                    <div class=\"tag conference\">C4</div>\n                                </th>\n                                <th class=\"content\">\n                                    <span class=\"title\">Ignorance is Almost Bliss: Near-Optimal Stochastic Matching With Few Queries</span> <br />\n                                    By <a href=\"http://www.cs.cmu.edu/~avrim/\">Avrim Blum</a>, <a href=\"http://jpdickerson.com/\">John P. Dickerson</a>, Nika Haghtalab, <a href=\"http://www.cs.cmu.edu/~arielpro/\">Ariel D. Procaccia</a>, <a href=\"http://www.cs.cmu.edu/~sandholm\">Tuomas Sandholm</a>, and <a href=\"https://sites.google.com/site/ankitsharmahomepage/\">Ankit Sharma</a>. <br />\n                                    EC 2015: Proc. 15th ACM Conference on Economics and Computation, 2015.  <br />\n                                    [ <a href=\"pubs/matching.pdf\">paper</a> ]\n                                </th>\n                            </tr>\n                        </table>\n                    </li>\n                    <li>\n                        <table>\n                            <tr>\n                                <th class=\"tagcell\">\n                                    <div class=\"tag conference\">C3</div>\n                                </th>\n                                <th class=\"content\">\n                                    <span class=\"title\">Learning Optimal Commitment to Overcome Insecurity</span> <br />\n                                    By <a href=\"http://www.cs.cmu.edu/~avrim/\">Avrim Blum</a>, Nika Haghtalab, and <a href=\"http://www.cs.cmu.edu/~arielpro/\">Ariel D. Procaccia</a>. <br />\n                                    NIPS 2014: Proc. 27th Annual Conference on Neural Information Processing Systems, 2014.   <br />\n                                    [ <a href=\"pubs/security_learn.pdf\">paper</a>, <a href=\"pubs/security_learn_poster.pdf\">poster</a> ]\n                                </th>\n                            </tr>\n                        </table>\n                    </li>\n                    <li>\n                        <table>\n                            <tr>\n                                <th class=\"tagcell\">\n                                    <div class=\"tag conference\">C2</div>\n                                </th>\n                                <th class=\"content\">\n                                    <span class=\"title\">Clustering in the Presence of Background Noise</span> <br />\n                                    By <a href=\"http://www.cs.uwaterloo.ca/~shai/\">Shai Ben-David</a> and Nika Haghtalab. <br />\n                                    ICML 2014: Proc. 31st International Conference in Machine Learning, June 2014.   <br />\n                                    [ <a href=\"pubs/icml2014_camera_ready.pdf\">paper</a> ]\n                                </th>\n                            </tr>\n                        </table>\n                    </li>\n                    <li>\n                        <table>\n                            <tr>\n                                <th class=\"tagcell\">\n                                    <div class=\"tag conference\">C1</div>\n                                </th>\n                                <th class=\"content\">\n                                    <span class=\"title\">Lazy Defenders Are Almost Optimal Against Diligent Attackers</span> <br />\n                                    By <a href=\"http://www.cs.cmu.edu/~avrim/\">Avrim Blum</a>, Nika Haghtalab, and <a href=\"http://www.cs.cmu.edu/~arielpro/\">Ariel D. Procaccia</a>. <br />\n                                    AAAI 2014: Proc. 28th AAAI Conference on Artificial Intelligence, Jul 2014. <br />\n                                    [ <a href=\"pubs/security_sample.pdf\">paper</a> ]\n                                </th>\n                            </tr>\n                        </table>\n                    </li>\n                    <li>\n                        <table>\n                            <tr>\n                                <th class=\"tagcell\">\n                                    <div class=\"tag thesis\">T1</div>\n                                </th>\n                                <th class=\"content\">\n                                    <span class=\"title\">Clustering in the Presence of Noise</span> <br />\n                                    By Nika Haghtalab. <br />\n                                    Master's Thesis, University of Waterloo.\n                                    [ <a href=\"https://uwspace.uwaterloo.ca/bitstream/handle/10012/7742/Haghtalab_Nika.pdf\">thesis</a> ]\n                                </th>\n                            </tr>\n                        </table>\n                    </li>\n                </ul>\n            </div>\n        </div>\n\n\n    ";
+
+        </script>
+        <script>
+(function() {
+    var data = window.researchTaxonomyData;
+    var sourceHtml = window.researchTaxonomySourceHtml || "";
+    if (!data || !document.getElementById("research_place")) {
+        return;
+    }
+
+    var selectedTheme = "all";
+    var selectedSubcategory = null;
+    var paperMetadata = {};
+
+    function normalizeTitle(title) {
+        return title.replace(/\s+/g, " ").trim().replace(/\.$/, "");
+    }
+
+    function loadOverrides() {
+        try {
+            return JSON.parse(localStorage.getItem(data.storageKey) || "{}");
+        } catch (error) {
+            return {};
+        }
+    }
+
+    function mergedPapers() {
+        var overrides = loadOverrides();
+        return data.papers.map(function(paper) {
+            var merged = {};
+            var key;
+            for (key in paper) {
+                if (Object.prototype.hasOwnProperty.call(paper, key)) {
+                    merged[key] = paper[key];
+                }
+            }
+            var override = overrides[paper.id] || {};
+            for (key in override) {
+                if (Object.prototype.hasOwnProperty.call(override, key)) {
+                    merged[key] = override[key];
+                }
+            }
+            return merged;
+        });
+    }
+
+    function findById(items, id) {
+        var index;
+        for (index = 0; index < items.length; index += 1) {
+            if (items[index].id === id) {
+                return items[index];
+            }
+        }
+        return null;
+    }
+
+    function arrayIncludes(items, value) {
+        return items.indexOf(value) !== -1;
+    }
+
+    function themeName(id) {
+        var match = findById(data.themes, id);
+        return match ? match.name : id;
+    }
+
+    function subcategoryName(id) {
+        var all = [];
+        Object.keys(data.subcategories).forEach(function(themeId) {
+            all = all.concat(data.subcategories[themeId]);
+        });
+        var match = findById(all, id);
+        return match ? match.name : id;
+    }
+
+    function escapeHtml(value) {
+        return String(value)
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#39;");
+    }
+
+    function themeCount(themeId) {
+        if (themeId === "all") {
+            return mergedPapers().length;
+        }
+        return mergedPapers().filter(function(paper) {
+            return arrayIncludes(paper.themes, themeId);
+        }).length;
+    }
+
+    function visiblePapers() {
+        return mergedPapers().filter(function(paper) {
+            var matchesTheme = selectedTheme === "all" || arrayIncludes(paper.themes, selectedTheme);
+            var matchesSubcategory = !selectedSubcategory || arrayIncludes(paper.subcategories, selectedSubcategory);
+            return matchesTheme && matchesSubcategory;
+        });
+    }
+
+    function renderThemes() {
+        var container = document.getElementById("theme_list");
+        var allThemes = [{ id: "all", name: "All papers" }].concat(data.themes);
+
+        container.innerHTML = allThemes.map(function(theme) {
+            return '<button type="button" class="theme-button ' + (selectedTheme === theme.id ? "active" : "") + '" data-theme-id="' + theme.id + '">' +
+                "<span>" + theme.name + "</span>" +
+                '<span class="theme-count">' + themeCount(theme.id) + "</span>" +
+                "</button>";
+        }).join("");
+
+        Array.prototype.slice.call(container.querySelectorAll("[data-theme-id]")).forEach(function(button) {
+            button.addEventListener("click", function() {
+                selectedTheme = button.getAttribute("data-theme-id");
+                selectedSubcategory = null;
+                render();
+            });
+        });
+    }
+
+    function renderSubcategories() {
+        var row = document.getElementById("subcat_row");
+        if (selectedTheme === "all") {
+            row.innerHTML = "";
+            return;
+        }
+
+        var subcategories = data.subcategories[selectedTheme] || [];
+        if (!subcategories.length) {
+            row.innerHTML = "";
+            return;
+        }
+
+        row.innerHTML = [
+            '<button type="button" class="subcat-button ' + (selectedSubcategory === null ? "active" : "") + '" data-subcategory-id="">All</button>'
+        ].concat(subcategories.map(function(subcategory) {
+            return '<button type="button" class="subcat-button ' + (selectedSubcategory === subcategory.id ? "active" : "") + '" data-subcategory-id="' + subcategory.id + '">' +
+                subcategory.name +
+                "</button>";
+        })).join("");
+
+        Array.prototype.slice.call(row.querySelectorAll("[data-subcategory-id]")).forEach(function(button) {
+            button.addEventListener("click", function() {
+                selectedSubcategory = button.getAttribute("data-subcategory-id") || null;
+                renderResults();
+                renderSubcategories();
+            });
+        });
+    }
+
+    function loadMetadata() {
+        if (!sourceHtml) {
+            return;
+        }
+
+        var wrappedHtml = '<div id="research_place_source">' + sourceHtml + "</div>";
+        var doc = new DOMParser().parseFromString(wrappedHtml, "text/html");
+        var rows = Array.prototype.slice.call(doc.querySelectorAll("#research_place_source tr"));
+        var nextMetadata = {};
+
+        rows.forEach(function(row, index) {
+            var tag = row.querySelector(".tag");
+            var content = row.querySelector(".content");
+            var titleNode = content ? content.querySelector(".title") : null;
+            if (!tag || !content || !titleNode) {
+                return;
+            }
+
+            var title = normalizeTitle(titleNode.textContent);
+            if (nextMetadata[title]) {
+                return;
+            }
+
+            nextMetadata[title] = {
+                badge: tag.textContent.trim(),
+                kind: Array.prototype.slice.call(tag.classList).filter(function(className) {
+                    return className !== "tag";
+                })[0] || "conference",
+                contentHtml: content.innerHTML.trim(),
+                order: index
+            };
+        });
+
+        paperMetadata = nextMetadata;
+    }
+
+    function renderResults() {
+        var papers = visiblePapers();
+        var theme = selectedTheme === "all"
+            ? { name: "All papers", description: "The full publication list." }
+            : findById(data.themes, selectedTheme);
+
+        document.getElementById("results_title").textContent = theme.name;
+        document.getElementById("results_summary").textContent = selectedSubcategory
+            ? "Refined by " + subcategoryName(selectedSubcategory) + "."
+            : theme.description;
+
+        var container = document.getElementById("paper_list");
+        var sortedPapers = papers.slice().sort(function(left, right) {
+            var leftMeta = paperMetadata[normalizeTitle(left.title)];
+            var rightMeta = paperMetadata[normalizeTitle(right.title)];
+            var leftOrder = leftMeta ? leftMeta.order : 9999;
+            var rightOrder = rightMeta ? rightMeta.order : 9999;
+            return leftOrder - rightOrder;
+        });
+
+        if (!sortedPapers.length) {
+            container.innerHTML = '<div class="empty-state">No papers match this filter.</div>';
+            return;
+        }
+
+        container.innerHTML = sortedPapers.map(function(paper) {
+            var metadata = paperMetadata[normalizeTitle(paper.title)];
+            var relevantSubcategories = selectedTheme === "all"
+                ? paper.subcategories
+                : paper.subcategories.filter(function(subcategoryId) {
+                    return (data.subcategories[selectedTheme] || []).some(function(entry) {
+                        return entry.id === subcategoryId;
+                    });
+                });
+
+            return '<article class="paper-row">' +
+                '<div class="paper-badge ' + (metadata ? metadata.kind : "working") + '">' + (metadata ? metadata.badge : "") + "</div>" +
+                '<div class="paper-main">' +
+                    '<div class="paper-body">' + (metadata ? metadata.contentHtml : ('<span class="title">' + escapeHtml(paper.title) + "</span>")) + "</div>" +
+                    '<div class="taxonomy-inline">' +
+                    paper.themes.map(function(themeId) {
+                        return '<span class="paper-tag">' + themeName(themeId) + "</span>";
+                    }).join("") +
+                    "</div>" +
+                    (relevantSubcategories.length ? ('<div class="paper-subcats">' +
+                        relevantSubcategories.map(function(subcategoryId) {
+                            return '<span class="paper-subcat">' + subcategoryName(subcategoryId) + "</span>";
+                        }).join("") +
+                        "</div>") : "") +
+                    (paper.notes ? ('<div class="paper-notes">Review note: ' + escapeHtml(paper.notes) + "</div>") : "") +
+                "</div>" +
+                "</article>";
+        }).join("");
+    }
+
+    function render() {
+        renderThemes();
+        renderSubcategories();
+        renderResults();
+    }
+
+    loadMetadata();
+    render();
+})();
+
+        </script>
+        <script src="jquery-3.1.0.min.js"></script>
+        <script>
+            var $j = jQuery;
+            
+            tabIndex = 0;
+            
+            sections = ["about", "research", "group", "teaching", "activities", "contact"];
+            
+            for(i=0; i<sections.length; i++) {
+                $j("#"+sections[i]+"_place").hide();
+            }
+            
+            ChooseList = function(node, changeCallback, place) {
+                
+                loadIndex = sections.indexOf(place) == -1 ? 0 : sections.indexOf(place);
+                
+                this.container = $j(node);
+                this.selectedNode = null;
+                this.currentIndex = null;
+                this.onChange = changeCallback;
+                this.elements = this.container.find('li');
+                this.container.find('li').on('click', $j.proxy(this.onClickHandler, this));
+                this.selectByIndex(loadIndex);
+
+                this.next = function() { 
+                    this.selectByIndex( ((this.currentIndex + 1) % this.elements.length));
+                };
+                
+                this.prev = function() { 
+                    this.selectByIndex( ((this.currentIndex + this.elements.length - 1) % this.elements.length));
+                };
+
+            };
+
+            ChooseList.prototype.onClickHandler = function(evt) {
+                evt.preventDefault();
+                this.selectByElement(evt.currentTarget);
+            }
+
+            ChooseList.prototype.selectByIndex = function(i) {
+                this.selectByElement(this.elements[i]);
+            };
+
+            ChooseList.prototype.selectByElement = function(el) {
+                if (this.selectedNode) {
+                    $j(this.selectedNode).removeClass("selected");
+                };
+                $j(el).addClass("selected");
+                for (var i=0; i < this.elements.length; i++) {
+                    if (this.elements[i] === el) {
+                        this.currentIndex = i;
+                    }
+                };
+                this.selectedNode = el;
+                this.onChange(this);
+            };
+            
+            function onMainChange(evt) {
+                $j("#"+sections[tabIndex]+"_place").fadeOut('fast', function() {
+                    $j("#"+sections[evt.currentIndex]+"_place").fadeIn();
+                });
+                tabIndex = evt.currentIndex;
+            }
+            
+            initialLoad = window.location.hash.substr(1);    
+            mainNav = new ChooseList($j(".navigation_list"), onMainChange, initialLoad);
+                
+            
+        </script>
+        
+    </body>
+</html>

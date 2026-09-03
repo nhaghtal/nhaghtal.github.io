@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EECS 272</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootswatch (Bootstrap 3.4.1) – Flatly theme -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@3.4.1/flatly/bootstrap.min.css">
+
+  <style>
+    /* Module label colors */
+    .label-theme1  { background:#2c3e50; }
+    .label-theme2  { background:#18bc9c; }
+    .label-theme3  { background:#3498db; }
+    .label-theme4  { background:#9b59b6; }
+    .label-theme5  { background:#f39c12; }
+    .label-theme6  { background:#e67e22; }
+    .label-theme7  { background:#8e44ad; }
+    .label-theme8  { background:#27ae60; }
+    .label-theme9  { background:#7f8c8d; }
+    .label-noclass { background:#e74c3c; }  /* Only for No Class */
+
+    /* Navbar fixes for multi-line brand */
+    .navbar { min-height: 70px; }
+    .navbar-inverse .navbar-brand {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      line-height: 1.3;
+      white-space: normal;
+      font-size: 20px;
+    }
+    .navbar-inverse .navbar-toggle {
+      margin-top: 12px;
+      margin-bottom: 12px;
+    }
+
+    /* Fallback offset so content isn't hidden under the fixed navbar */
+    @media (min-width: 768px) { body { padding-top: 100px; } }
+    @media (max-width: 767px) { body { padding-top: 70px; } }
+
+    /* Page polish */
+    p { font-size: 120%; }
+    .label { font-size: 85%; }
+    .page-section { margin-bottom: 40px; }
+    .page-section > h1 { border-bottom: 1px solid rgba(0,0,0,.1); padding-bottom: 10px; }
+    .table th { white-space: nowrap; }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" style="zoom:1;">
+
+<!-- Navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false" aria-controls="myNavbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- Two-line brand text -->
+          <a class="navbar-brand" href="#">EECS 272, Fall 2025: Foundations of Learning, Decisions, and Games</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#overview"><span class="glyphicon glyphicon-book"></span> Overview</a></li>
+            <li><a href="#schedule"><span class="glyphicon glyphicon-calendar"></span> Schedule</a></li>
+            <li><a href="#participation"><span class="glyphicon glyphicon-user"></span> Scribing & Participation</a></li>
+            <li><a href="#assignments"><span class="glyphicon glyphicon-tasks"></span> Homeworks & Projects</a></li>
+            <li><a href="#exams"><span class="glyphicon glyphicon-education"></span> Exams</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-10 col-lg-offset-1">
+
+<!-- Sign up sheet      -->
+
+<!--
+<div class="alert alert-danger" role="alert">
+  <strong>Attention:</strong> If you were unable to register for the class on CalCentral and would still like to be considered for the class, please 
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfc0_fwq6rf61j08Nw19BKZknQmlWTVL04VfJqg5dOyqIVcRw/viewform?usp=dialog" target="_blank" class="alert-link">fill out this form</a>.
+</div>
+-->
+      <!-- Overview -->
+      <div id="overview" class="page-section">
+        <h1>Overview</h1>
+
+        <div class="panel panel-default">
+          <div class="panel-heading"><strong>Key Information</strong></div>
+          <div class="panel-body">
+            <form class="form-horizontal">
+              <fieldset>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">Lectures</label>
+                  <div class="col-sm-10">
+                    <p class="form-control-static">Tuesday + Thursday, 9:40am - 11am, <s>Soda 405</s>(<strong style="color: red;">New Location: SODA 310</strong>)</p>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">Instructor</label>
+                  <div class="col-sm-10">
+                    <p class="form-control-static"><a href="https://people.eecs.berkeley.edu/~nika/" target="_blank" rel="noopener">Nika Haghtalab</a></p>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">Graduate Reader</label>
+                  <div class="col-sm-10">
+                    <p class="form-control-static"><a href="https://aulichney.github.io/" target="_blank" rel="noopener">Annie Ulichney</a></p>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">Grading</label>
+                  <div class="col-sm-10">
+                    <p class="form-control-static">42% homeworks, 8% peer review, 40% project and proposals, 7% scribing, 3% class participation</p>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+
+
+
+        <p>This course introduces students to the mathematical foundation of learning in the presence of strategic and societal agency. This is a theory-oriented course that will draw from the statistical and computational foundations of machine learning, computer science, and economics. As a research-oriented course, a range of advanced topics will be explored to paint a comprehensive picture of classical and modern approaches to learning for the purpose of decision making. These topics include foundations of learning, foundations of algorithmic game theory, cooperative and non-cooperative games, equilibria and dynamics, learning in games, information asymmetries, mechanism design, and learning with incentives. Assigned classwork includes written proof-based homework assignments, participation in discussions and peer evaluations, scribing and contributing to creating enrichment material, and research projects.
+</p>
+        <p> Potential list of topics is subject to change but will likely include the following: 
+        <ul>
+          <li> <p>Basics of offline and online learning, including VC theory, online learning, mistake bounds, etc.</p></li>
+          <li> <p>Smoothed Analysis of Learning.</p></li>
+ 	  <li> <p>Bandits and online learning with partial information.</p></li>
+  	  <li> <p>Game theory and solution concepts such as Nash equilibria, Correlated Equilibria, and Stackelberg Games.</p></li>
+  	  <li> <p>Learning Dynamics in Games.</p></li>
+  	  <li> <p>Trustworthy predictions, calibration, and decision-theoretic notions of prediction quality.</p></li>
+  	  <li> <p>Multi-distribution and multi-objective learning.</p></li>
+  	  <li> <p>Fine-grained learning guarantees, multi-calibration, omni-prediction, and pan-prediction.</p></li>
+        </ul>
+        
+        </p>
+
+
+        <h3> Prerequisites </h3>
+        <p>Graduate-level mathematical maturity, including proof-based graduate-level courses in at least two, but recommended three, of the following categories:
+	<ol>
+		<li><p>Statistics and Probability, e.g., STAT205, STAT210</p></li>
+		<li><p>Economics, e.g., ECON207</p></li>
+		<li><p>Algorithms, e.g., CS270</p></li>
+		<li><p>Optimization, e.g., EE 227</p></li>
+		<li><p>Control theory, e.g., EE 221A</p></li>
+	</ol>
+		<p>Please note that some of these pre-requisites play a larger role than others. For example, the course assume that you are comfortable with (1) and lack of preparation in category (1) will be hard to overcome. On the other hand, the course takes a slower approach to the introduction of category (2) concepts and lack of preparation in category (2) can be more easily overcome. It is highly recommended that you feel comfortable with at least one of category (3-5) topics, as the course is strongly algorithmic in nature.</p>
+
+      <!-- Schedule -->
+      <div id="schedule" class="page-section">
+        <h1>Schedule (Subject to change)</h1>
+        <p>This schedule of tentative. It is likely that some topics will move around or even be removed from the schedule as the term progresses.</p>
+
+        <table class="table table-striped table-hover">
+          <thead>
+            <tr>
+              <th>Date</th><th>Topic</th><th>Slides/Notes</th><th>Readings</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="label label-theme1">08/28</span></td><td>Introduction and Gentle Start</td><td><a href="01-intro.pdf">Lecture 1 Slides</a></td><td></td></tr>
+            <tr><td><span class="label label-theme1">09/02</span></td><td>Statistical learning I</td><td><a href="02-consistency-pac.pdf">Lecture 2 Notes</a></td><td>UML chapter 2-3</td></tr>
+            <tr><td><span class="label label-theme1">09/04</span></td><td>Statistical learning II</td><td><a href="03-pac.pdf">Lecture 3 Notes</a></td><td>UML Chapter 4</td></tr>
+            <tr><td><span class="label label-theme1">09/09</span></td><td>Statistical learning III</td><td><a href="lec-0909.pdf">Lecture 4 Notes</a></td><td>UML Chapter 6</td></tr>
+            <tr><td><span class="label label-theme2">09/11</span></td><td>Agnostic Learning and Intro to Online Learning</td><td><a href="lec-0911.pdf">Lecture 5 Notes</a></td><td>UML Chapter 21</td></tr>
+            <tr><td><span class="label label-theme2">09/16</span></td><td>Online Learning II</td><td><a href="lec-0916.pdf">Lecture 6 Notes</a></td><td>UML Chapter 21 and <a href="https://cs.nyu.edu/~mohri/mlbook/">FoML Chapter 8</a></td></tr>
+            <tr><td><span class="label label-theme2">09/18</span></td><td>Online Learning III</td><td><a href="lec-0918.pdf">Lecture 7 Notes</a></td><td>UML Chapter 21</td></tr>
+            <tr><td><span class="label label-theme3">09/23</span></td><td>Online Learning with Smoothed Adversaries</td><td><a href="lec-0923.pdf">Lecture 8 Notes</a></td><td><a href="https://dl.acm.org/doi/pdf/10.1145/3656638">Journal of the ACM paper</a></td></tr>
+            <tr><td><span class="label label-theme3">09/25</span></td><td>Efficient Algorithms for Online Learning</td><td><a href="lec-0925.pdf">Lecture 9 Notes</a></td><td></td></tr>
+            <tr><td><span class="label label-theme4">09/30</span></td><td>Bandits and Partial Feedback</td><td><a href="lec-0930.pdf">Lecture 10 Notes</a></td><td></td></tr>
+            <tr><td><span class="label label-theme5">10/02</span></td><td>Zero-sum Games</td><td><a href="lec-1002.pdf">Lecture 11 Notes</a></td><td>Section 18.3, <a href="https://www-cambridge-org.libproxy.berkeley.edu/core/books/twenty-lectures-on-algorithmic-game-theory/A9D9427C8F43E7DAEF8C702755B6D72B">20 Lectures on AGT</a></td></tr>
+            <tr><td><span class="label label-theme5">10/07</span></td><td>General-Sum Games and Nash Equilibria</td><td><a href="lec-1007.pdf">Lecture 12 Notes</a></td><td>Chapter 20.5, <a href="https://www-cambridge-org.libproxy.berkeley.edu/core/books/twenty-lectures-on-algorithmic-game-theory/A9D9427C8F43E7DAEF8C702755B6D72B">20 Lectures on AGT</a></td></tr>
+            <tr><td><span class="label label-theme5">10/09</span></td><td>Correlated Equilibria</td><td><a href="lec-1009.pdf">Lecture 13 Notes</a></td><td>Chapter 17, <a href="https://www-cambridge-org.libproxy.berkeley.edu/core/books/twenty-lectures-on-algorithmic-game-theory/A9D9427C8F43E7DAEF8C702755B6D72B">20 Lectures on AGT</a></td></tr>
+            <tr><td><span class="label label-noclass">10/14</span></td><td>Special lecture on Auctions (Annie Ulichney)</td><td><a href="lec-1014.pdf">Lecture 14 Notes</a></td><td></td></tr>
+            <tr><td><span class="label label-noclass">10/16</span></td><td>Lecture canceled</td><td></td><td></td></tr>
+            <tr><td><span class="label label-theme5">10/21</span></td><td>Algorithms for Swap Regret</td><td><a href="lec-1021.pdf">Lecture 15 Notes</a></td><td>Chapter 18, <a href="https://www-cambridge-org.libproxy.berkeley.edu/core/books/twenty-lectures-on-algorithmic-game-theory/A9D9427C8F43E7DAEF8C702755B6D72B">20 Lectures on AGT</a></td></tr>
+            <tr><td><span class="label label-theme6">10/23</span></td><td>Stackelberg Games</td><td><a href="lec-1023.pdf">Lecture 16 Notes</a></td><td></td></tr>
+            <tr><td><span class="label label-theme6">10/28</span></td><td>Learning in Stackelberg Games I</td><td><a href="lec-1028.pdf">Lecture 17 Notes</a></td><td></td></tr>
+            <tr><td><span class="label label-theme6">10/30</span></td><td>Learning in Stackelberg Games II</td><td><a href="lec-1030.pdf">Lecture 18 Notes</a></td><td></td></tr>
+            <tr><td><span class="label label-theme7">11/04</span></td><td>Sequential Calibration</td><td><a href="lec-1104.pdf">Lecture 19 Notes</a></td><td></td></tr>
+            <tr><td><span class="label label-theme7">11/06</span></td><td>Algorithm for and Implications of Calibration</td><td><a href="lec-1106.pdf">Lecture 20 Notes</a></td><td></td></tr>
+            <tr><td><span class="label label-noclass">11/11</span></td><td>No Class (Veterans Day)</td><td></td><td></td></tr>
+            <tr><td><span class="label label-theme7">11/13</span></td><td>Calibration and Reliable Decision-making</td><td><a href="lec-1113.pdf">Lecture 21 Notes</a></td><td></td></tr>
+            <tr><td><span class="label label-theme8">11/18</span></td><td>Calibration and Incentives</td><td><a href="lec-1118.pdf">Lecture 22 Notes</a></td><td></td></tr>
+            <tr><td><span class="label label-theme8">11/20</span></td><td>Multi-distribution Learning I</td><td><a href="lec-1120.pdf">Lecture 23 Notes</a></td><td></td></tr>
+            <tr><td><span class="label label-theme8">11/25</span></td><td>Multi-distribution Learning II</td><td><a href="lec-1125.pdf">Lecture 24 Notes</a></td><td></td></tr>
+            <tr><td><span class="label label-theme9">12/02</span></td><td>Omni-prediction I</td><td><a href="lec-1202.pdf">Lecture 25 Notes</a></td><td></td></tr>
+            <tr><td><span class="label label-theme9">12/04</span></td><td>Omni-prediction and Multi-objective Learning</td><td><a href="lec-1204.pdf">Lecture 26 Notes</a></td><td></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Participation -->
+	<div id="participation">
+        <h1>Scribing and Class Participation</h1>
+        <p>Every student will be responsible for scribing 1-2 lectures, based on the number of student enrolled in class. Scribing is worth 7% of your final grade. A form will be posted to sign up  for scribing. </p>
+        
+        <p>The first draft of the scribed notes are due 2 work days after the corresponding lecture, i.e., Tuesday lecture note are due on Thursday and Thursday lecture notes are due on the following Monday. Within these two days, the student has to also schedule a short (15-30 min) meeting with the instructor or staff to go over the draft of the scribed notes and receive feedback. The final scribed notes are due within 2 work days after the initial draft.</p>
+
+      <!-- Assignments -->
+      <div id="assignments">
+        <h1>Homeworks and Projects</h1>
+        <p>Written homeworks will involve deriving and proving mathematical results and critically analyzing the material presented in class. Please submit your assignments on Gradescope. We highly encourage you to typeset your submissions. Any part of the submitted work that is not readable by the TAs will be ignored. The homeworks can be done in groups of up to 2 students. 
+        </p>
+        <p>The project involves performing novel research that is directly related to the material covered in the class. Surveys are not within scope for the class project. All students participate in peer reviewing project proposals. The first version of your project proposal will be shared with a few students in the classroom who will be asked to critique your proposal. Your proposal will also be reviewed by the course staff and instructor. You will take this feedback into account when preparing the second version of your proposal. 
+        </p>
+
+	<p>Solutions will be released about 3-5 days after the deadline. </p>
+        <h3>Due dates (Subject to change)</h3>
+        <table class="table table-striped table-hover">
+          <thead>
+            <tr><th>Homework</th><th>Files</th><th>Posted</th><th>Due</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Homework 0</td><td></td><td>09/02 (*)</td><td>09/10 (*)</td></tr>
+            <tr><td>Homework 1</td><td></td><td>09/05</td><td>09/16</td></tr>
+            <tr><td>Homework 2</td><td></td><td>09/19</td><td>09/30</td></tr>
+            <tr><td>Homework 3</td><td></td><td>10/03</td><td>10/14</td></tr>
+            <tr><td>Project proposal V1</td><td></td><td></td><td>10/07</td></tr>
+            <tr><td>Project proposal Peer Assignment</td><td></td><td>10/09</td><td>10/21</td></tr>
+            <tr><td>Project proposal V2</td><td></td><td></td><td>11/04</td></tr>
+            <tr><td>Homework 4</td><td></td><td>11/07</td><td>11/20 (*)</td></tr>
+            <tr><td>Homework 5</td><td></td><td>11/25 (*)</td><td>12/05</td></tr>
+            <tr><td>Final Project</td><td></td><td>Presentation TBD</td><td>Report TBD</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Exams -->
+      <div id="exams" class="page-section">
+        <h1>Exams</h1>
+        <p>The class does not have a midterm or final exam!</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
+
+<!-- Auto-adjust body padding to navbar height -->
+<script>
+  (function () {
+    function adjustBodyOffset() {
+      var nav = document.querySelector('.navbar.navbar-fixed-top');
+      if (!nav) return;
+      var h = nav.offsetHeight || 0;
+      document.body.style.paddingTop = h + 'px';
+    }
+    window.addEventListener('load', adjustBodyOffset);
+    window.addEventListener('resize', adjustBodyOffset);
+    document.addEventListener('click', function (e) {
+      if (e.target.closest('.navbar-toggle')) {
+        setTimeout(adjustBodyOffset, 350); // wait for collapse animation
+      }
+    });
+  })();
+</script>
+
+</body>
+</html>

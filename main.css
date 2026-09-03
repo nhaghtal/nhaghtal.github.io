@@ -1,0 +1,424 @@
+body {
+    font-family: 'Roboto', Helvetica, Arial, san-serif;
+}
+
+h1 {
+    margin-top: 15px;
+}
+
+h2 {
+    margin: 5px 0 5px 0;
+    font-weight: 400;
+    padding: 0;
+}
+
+h3 {
+    padding-top: 15px;
+    font-weight: 400;
+}
+
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 6px;
+}
+
+.sidebar {
+    width: 240px;
+    float: left;
+    padding: 15px 15px 0 30px;
+    height: 100%
+}
+
+.sidebar img {
+    padding-top: 30px;
+}
+
+.name {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.subtitle {
+    font-weight: 300;
+}
+
+.topbar {
+    display: block;
+    width: 100%;
+    height: 90px;
+    margin-left: 240px;
+    padding: 15px 0 0 15px;
+}
+
+.topbar::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.topbar ul {
+    list-style: none;
+    margin: 0;
+}
+
+.topbar ul li {
+    display: block;
+    float: left;
+    margin-right: 50px;
+    font-size: 22px;
+    font-weight: 300;
+    padding-bottom: 10px;
+    color: #ab425f;
+}
+
+.topbar ul li:hover {
+    color: purple;
+    cursor: pointer;
+}
+
+.topbar li.selected {
+    border-bottom: 1px solid #ab425f;
+}
+
+.maintext {
+    display: block;
+    margin-left: 240px;
+    padding-left: 50px;
+    font-weight: 300;
+    width: 600px;
+}
+
+.maintext h1 {
+    font-weight: 300;
+    font-size: 28px;
+}
+
+.maintext b {
+    font-weight: 400;
+}
+
+.maintext a {
+    color: #ab425f;
+    text-decoration: none;
+}
+
+.maintext a:hover {
+    cursor: pointer;
+    color: purple;
+}
+
+.research_list ul {
+    list-style: none;
+    padding-left: 0px;
+    margin-bottom: 30px;
+}
+
+.research_list ul li {
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+
+.research_list .content {
+    font-weight: 300;
+}
+
+.research_list .title {
+    font-weight: 500;
+}
+
+.research_list .tagcell {
+    width: 50px;
+    vertical-align: top;
+}
+
+.research_list .tag {
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    width: 35px;
+    height: 18px;
+    line-height: 18px;
+}
+
+.research_list .conference {
+    background-color: #0233d1;
+}
+
+.research_list .journal {
+    background-color: #e6233d;
+}
+
+.research_list .bookchapter {
+    background-color: #ff8c00;
+    
+}
+
+.research_list .thesis {
+    background-color: #ffd700;
+    
+}
+
+.research_list .working {
+    background-color: #606b70;
+}
+
+.ed_list th {
+    font-weight: 300;
+}
+
+.ed_list .title {
+    font-weight: 400;
+}
+
+.ed_list .year {
+    font-weight: 300;
+    padding: 10px;
+    color: white;
+    background-color: #41ab8d;
+    height: 18px;
+    line-height: 18px;
+    margin-right: 10px;
+    font-weight: 400;
+    width: 40px;
+    text-align: center;
+}
+
+.ed_list .blankyear {
+    padding: 10px;
+    margin-right: 10px;
+    width: 40px;
+}
+
+.ed_list ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.ed_list ul li {
+    margin-bottom: 20px;
+}
+
+.ed_list ul li.blankyearlist {
+    margin-bottom: 5px;
+}
+
+.contact_list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact_list ul li {
+    display: block;
+    height: 90px;;
+    padding: 15px;
+}
+
+.contact_list img {
+    float: left;
+    margin-right: 20px;
+}
+
+#publication_source {
+    display: none;
+}
+
+.maintext {
+    width: auto;
+    max-width: 920px;
+    padding-right: 40px;
+}
+
+.research-overview {
+    margin-bottom: 36px;
+}
+
+.research-summary {
+    margin-bottom: 24px;
+}
+
+.eyebrow {
+    margin: 0 0 6px 0;
+    color: #ab425f;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.area-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    margin: 24px 0;
+}
+
+.area-card {
+    border: 1px solid #ead7dd;
+    border-radius: 18px;
+    padding: 20px;
+    background: linear-gradient(180deg, #fffafb 0%, #fff 100%);
+    box-shadow: 0 10px 30px rgba(171, 66, 95, 0.08);
+}
+
+.area-card h2,
+.paper-group-header h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.area-card p,
+.paper-group-header p {
+    margin-bottom: 0;
+}
+
+.area-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 10px;
+}
+
+.area-count {
+    white-space: nowrap;
+    color: #7f5a66;
+    font-size: 14px;
+}
+
+.area-jump,
+.category-chip {
+    border: 0;
+    border-radius: 999px;
+    background: #ab425f;
+    color: white;
+    font: inherit;
+    font-size: 14px;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+.area-jump:hover,
+.category-chip:hover {
+    background: #8f324d;
+}
+
+.category-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.paper-group {
+    margin: 42px 0 52px 0;
+}
+
+.paper-group-header {
+    display: grid;
+    grid-template-columns: minmax(0, 280px) minmax(0, 1fr);
+    gap: 24px;
+    align-items: start;
+    margin-bottom: 22px;
+}
+
+.paper-list {
+    display: grid;
+    gap: 16px;
+}
+
+.paper-item {
+    display: grid;
+    grid-template-columns: 56px minmax(0, 1fr);
+    gap: 14px;
+    align-items: start;
+    padding: 18px;
+    border-radius: 18px;
+    border: 1px solid #eee6e8;
+    background: #fff;
+}
+
+.paper-badge {
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    padding: 6px 4px;
+    font-size: 14px;
+    width: 42px;
+    min-height: 20px;
+    line-height: 20px;
+    border-radius: 12px;
+}
+
+.paper-badge.conference {
+    background-color: #0233d1;
+}
+
+.paper-badge.journal {
+    background-color: #e6233d;
+}
+
+.paper-badge.bookchapter {
+    background-color: #ff8c00;
+}
+
+.paper-badge.thesis {
+    background-color: #c49a00;
+}
+
+.paper-badge.working {
+    background-color: #606b70;
+}
+
+.paper-body {
+    font-weight: 300;
+}
+
+.paper-body .title {
+    font-weight: 500;
+}
+
+@media (max-width: 980px) {
+    .sidebar {
+        float: none;
+        width: auto;
+        padding: 24px 24px 0 24px;
+    }
+
+    .topbar,
+    .maintext {
+        margin-left: 0;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .topbar {
+        height: auto;
+        padding-top: 8px;
+    }
+
+    .topbar ul li {
+        margin-right: 24px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 720px) {
+    .area-grid,
+    .paper-group-header,
+    .paper-item {
+        grid-template-columns: 1fr;
+    }
+
+    .paper-item {
+        gap: 10px;
+    }
+
+    .paper-badge {
+        width: fit-content;
+        min-width: 42px;
+    }
+}
